@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products | DUAL TRAILS</title>
+	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/gallery.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/193401bb99.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<nav class="nav">
+		<div class="nav__panel">
+			<div class="nav__burger">
+				<i class="fa-solid fa-bars burger"></i>
+			</div>
+			<a class="nav__home" href="../../">
+				<div class="nav__img"></div>
+			</a>
+		</div>
+		<div class="nav__menu">
+			<a class="nav__item" href="../allproducts">products</a>
+			<a class="nav__item" href="../events">events</a>
+			<a class="nav__item" href="../aboutUs">about us</a>
+		</div>
+	</nav>
+	<div class="product-page">
+		<section class="gallery">
+
+			<div class="gallery__current">
+				<img src="../../images/product4/foto1.jpg" alt="foto1" class="current__photo">
+			</div>
+
+			<div class="gallery__scroll">
+				<div class="scroll__item">
+					<img src="../../images/product4/foto1.jpg" alt="foto1" class="scroll__photo">
+				</div>
+				<div class="scroll__item">
+					<img src="../../images/product4/foto2.jpg" alt="foto2" class="scroll__photo">
+				</div>
+				<div class="scroll__item">
+					<img src="../../images/product4/foto3.jpg" alt="foto2" class="scroll__photo">
+				</div>
+				<div class="scroll__item">
+					<img src="../../images/product4/foto4.jpg" alt="foto2" class="scroll__photo">
+				</div>
+				<div class="scroll__item">
+					<img src="../../images/product4/foto5.jpg" alt="foto2" class="scroll__photo">
+				</div>
+			</div>
+
+		</section>
+
+		<div class="description">
+			<h1 class="description__title">t-shirt - kosmos</h1>
+			<h2 class="description__price"><s class="product__old-price">100,00 PLN<br></s>70,00 pln</h2>
+			<p>rozmiary</p>
+			<section class="sizes">
+				<div class="size__circle">
+					<i class="fa-solid fa-xmark size-out "></i>
+					<p class="size__name">S</p>
+				</div>
+				<div class="size__circle">
+					<p class="size__name">M</p>
+				</div>
+				<div class="size__circle">
+
+					<p class="size__name">L</p>
+				</div>
+				<div class="size__circle">
+
+					<p class="size__name">XL</p>
+				</div>
+				<div class="size__circle">
+
+					<p class="size__name">XXL</p>
+				</div>
+			</section>
+
+			<p class="size-chart">Tabela rozmiarów <i class="fa-solid fa-ruler size-icon"></i></p>
+
+			<section class="size-popup">
+				<div class="popup__background"> </div>
+				<div class="popup__photo "></div>
+				<i class="fa-solid fa-xmark popup__close"></i>
+			</section>
+
+
+			<ul class="attributes">
+				<li>Materiał: 100% bawełna</li>
+				<li>Gramatura: 180g/m<sup>2</sup></li>
+				<li>Kolor: czarny</li>
+				<li>Krój: regular fit</li>
+				<li>Wyprodukowane w polsce</li>
+				<li>Model 184cm rozmiar L</li>
+			</ul>
+			<button class="buy">Zamów</button>
+			<script>
+				document.querySelector('.buy').onclick = function () {
+					alert('Wysyłka InPost +15 PLN \nW polu "Twój adres" wprowadź kod paczkomatu oraz podaj rozmiar');
+					location.href = "https://zrzutka.pl/kuh8fm/wplac/e46pnp";
+				};
+			</script>
+
+
+		</div>
+	</div>
+
+	<section class="products">
+		<div class="product">
+			<a class="link" href="product1">
+				<img src="../../images/product1/foto1main.jpg" alt="produkt1" class="product__img">
+				<h2 class="product__name">bluza - klin</h2>
+				<p class="product__price"><s class="product__old-price">250,00 PLN</s> 200,00 PLN</p>
+			</a>
+		</div>
+		<div class="product">
+			<a class="link" href="product2">
+				<img src="../../images/product2/foto1.jpg" alt="produkt2" class="product__img">
+				<h2 class="product__name">butelka termiczna 600ml</h2>
+				<p class="product__price"><s class="product__old-price">100,00 PLN</s> 80,00 PLN</p>
+			</a>
+		</div>
+		<div class="product">
+			<a class="link" href="product3">
+				<img src="../../images/product3/foto1.jpg" alt="produkt3" class="product__img">
+				<h2 class="product__name">t-shirt cracworx</h2>
+				<p class="product__price"><s class="product__old-price">100,00 PLN</s> 70,00 PLN</p>
+			</a>
+		</div>
+		<div class="product">
+			<a class="link" href="product4">
+				<img src="../../images/product4/foto1.jpg" alt="produkt5" class="product__img">
+				<h2 class="product__name">t-shirt kosmos</h2>
+				<p class="product__price"><s class="product__old-price">100,00 PLN</s> 70,00 PLN</p>
+			</a>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__item contact">
+			<p class="item__name">Contact</p>
+			<a href="mailto:info@dualtrails.com"><i class="fa-regular fa-envelope footer__icon"></i></a>
+			<p class="footer__mail">info@dualtrails.com</p>
+		</div>
+
+		<div class="footer__item social">
+			<p class="item__name">Find Us</p>
+			<a href="https://www.instagram.com/dualtrails/"><i class="fa-brands fa-instagram footer__icon"></i></a>
+			<a href="https://www.facebook.com/DualTrails"><i class="fa-brands fa-facebook-f footer__icon"></i></a>
+			<a href="https://www.youtube.com/c/sooczek"><i class="fa-brands fa-youtube footer__icon" class=""></i></a>
+		</div>
+
+		<div class="footer__item zrzutka">
+			<p class="item__name">no dig no ride</p>
+			<a href="https://zrzutka.pl/z/dualtrails">
+				<div class="footer__pig"></div>
+			</a>
+		</div>
+	</footer>
+
+	<script src="../../scripts/gallery.js"></script>
+	<script src="../../scripts/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+:root {
+	--font-size: 16px;
+	--font-size-title: 22px;
+}
+
+/*|||||||||||||||| Product ||||||||||||||||*/
+.product-page {
+	font-size: var(--font-size);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*|||||||||||||||| Gallery ||||||||||||||||*/
+.gallery {
+	margin: 0 auto;
+	margin-top: 2.5vw;
+	width: 95vw;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5vw;
+}
+
+/* Current photo */
+
+.current__photo {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Scroll */
+.gallery__scroll {
+	display: flex;
+	gap: 10px;
+	height: 20vh;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	cursor: pointer;
+	justify-content: flex-start;
+}
+
+.scroll__photo {
+	height: 20vh;
+}
+
+.scroll__photo:hover {
+	scale: 1.1;
+}
+
+/*|||||||||||||||| Title and price ||||||||||||||||*/
+.description {
+	display: block;
+	margin-top: 2.5vw;
+}
+
+.description__title {
+	font-size: var(--font-size-title);
+	margin: 10px 0;
+}
+
+.description__price {
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.attributes {
+	margin-top: 20px;
+	text-transform: none;
+}
+
+/*|||||||||||||||| Sizes ||||||||||||||||*/
+.sizes {
+	display: flex;
+}
+
+.size__circle {
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+	border: 2px solid gray;
+	border-radius: 50%;
+	display: flex;
+	position: relative;
+}
+
+.size__name {
+	margin: auto;
+}
+
+.size-out {
+	color: gray;
+	font-size: 40px;
+	opacity: 75%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*|||||||||||||||| Pop up ||||||||||||||||*/
+.size-chart {
+	cursor: pointer;
+}
+
+.size-popup {
+	display: none;
+}
+
+.popup__background {
+	position: fixed;
+	top: -10vh;
+	left: 0;
+	width: 100vw;
+	height: 110vh;
+	background-color: black;
+	opacity: 90%;
+}
+
+.popup__photo {
+	height: 80vw;
+	width: 80vw;
+	position: fixed;
+	top: 20vh;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url("../images/sizecharts/sizechart.jpg") center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.popup__photo.bluza {
+	background: url("../images/sizecharts/sizechart2.jpg") center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.popup__close {
+	position: fixed;
+	width: 80vw;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 20vh;
+	font-size: 30px;
+	text-align: right;
+	padding: 10px;
+	color: black
+}
+
+.popup__close:hover {
+	color: grey;
+}
+
+/*|||||||||||||||| Button ||||||||||||||||*/
+
+.buy {
+	background-color: transparent;
+	font-size: 20px;
+	display: block;
+	padding: 20px 50px;
+	margin: 20px auto;
+	border: 0;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.buy:hover {
+	background-color: grey;
+}
+
+.aboutus,
+.events {
+	font-size: var(--fontsize-footer);
+	text-transform: none;
+
+}
+
+@media (min-width: 768px) {
+	:root {
+		--font-size: 18px;
+		--font-size-title: 22px;
+	}
+}
+
+@media (min-width: 1024px) {
+	:root {
+		--font-size: 20px;
+		--font-size-title: 24px;
+	}
+
+	.product-page {
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.gallery {
+		height: 86vh;
+		flex-direction: row;
+		width: auto;
+		margin: 2.5vw;
+	}
+
+	.gallery__scroll {
+		order: -1;
+		height: 86vh;
+		flex-direction: column;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		flex-basis: auto;
+	}
+
+	.current__photo {
+		height: 86vh;
+	}
+
+	.popup__photo {
+		height: 70vh;
+		width: 70vh;
+	}
+
+	.popup__close {
+		width: 70vh;
+	}
+}
+
+@media (min-width: 1440px) {
+	:root {
+		--font-size: 22px;
+		--font-size-title: 26px;
+	}
+
+	.size__circle {
+		width: 80px;
+		height: 80px;
+	}
+
+	.size-out {
+		font-size: 70px
+	}
+
+	.buy {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 1920px) {
+	:root {
+		--font-size: 26px;
+		--font-size-title: 30px;
+	}
+
+	.size__circle {
+		width: 90px;
+		height: 90px;
+	}
+
+	.size-out {
+		font-size: 80px
+	}
+
+	.buy {
+		font-size: 28px;
+	}
+
+}
+
+@media (min-width: 2560px) {
+	:root {
+		--font-size: 30px;
+		--font-size-title: 36px;
+	}
+
+	.size__circle {
+		width: 100px;
+		height: 100px;
+	}
+
+	.size-out {
+		font-size: 90px
+	}
+
+	.buy {
+		font-size: 30px;
+	}
+
+}

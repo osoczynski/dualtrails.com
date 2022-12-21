@@ -1,0 +1,16 @@
+.aboutus {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.aboutus img {
+	width: 100%;
+	height: auto;
+}
+
+.aboutus p {
+	text-align: center;
+	padding: 50px;
+}
