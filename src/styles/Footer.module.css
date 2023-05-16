@@ -1,0 +1,103 @@
+.footer {
+  --icon-box-size: 3rem;
+  --icon-size: 2rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: lightgray;
+  font-size: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: var(--icon-box-size);
+  width: var(--icon-box-size);
+  font-size: var(--icon-size);
+  color: black;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: gray;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.mail {
+  display: flex;
+  align-items: center;
+}
+
+.mail p {
+  padding-left: 0.2rem;
+  text-transform: lowercase;
+  font-size: 1.1rem;
+}
+
+.findUs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.zrzutka {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.pig {
+  height: var(--icon-box-size);
+  width: var(--icon-box-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pig img {
+  display: block;
+  width: auto;
+  height: var(--icon-size);
+  filter: brightness(0);
+  transition: 0.3s;
+}
+
+.pig img:hover {
+  filter: brightness(1);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+    height: 7rem;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .pig {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 1rem 10vw;
+  }
+}

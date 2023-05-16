@@ -1,0 +1,41 @@
+.aboutus {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.aboutus p {
+  text-align: center;
+  padding: 2rem;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .aboutus p {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1920px) {
+}

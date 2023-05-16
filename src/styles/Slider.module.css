@@ -1,0 +1,25 @@
+.slider {
+  width: 100%;
+}
+.slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    width: 80%;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1920px) {
+}

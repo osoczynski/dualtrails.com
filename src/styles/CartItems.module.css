@@ -1,0 +1,38 @@
+.items {
+  max-height: 66vh;
+  overflow: scroll;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: baseline;
+  border-bottom: 1px solid black;
+  padding: 0.8rem 0;
+}
+
+.product {
+  max-width: 35%;
+  overflow: visible;
+}
+
+.summary {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-size: 0.7rem;
+}
+
+.delete {
+  font-size: 1.5rem;
+}
+
+/* @media (min-width: 1024px) {
+  .cartItem {
+    width: 90%;
+    margin: 0 auto;
+  }
+} */

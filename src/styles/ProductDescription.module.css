@@ -1,0 +1,92 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  font-size: 1.2rem;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: gray;
+  padding-left: 0.5rem;
+}
+
+.price-new {
+  font-weight: bold;
+}
+
+.sizes {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.size-item {
+  padding: 1.5rem;
+  border: 2px solid grey;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.size-item.active {
+  background-color: lightgray;
+  border: 2px solid black;
+}
+
+.sizechart {
+  cursor: pointer;
+}
+
+.sizechart:hover {
+  opacity: 0.8;
+}
+
+.worrning {
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+.button {
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: lightgray;
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  .description {
+    align-items: start;
+  }
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1920px) {
+}

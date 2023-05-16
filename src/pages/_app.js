@@ -1,5 +1,19 @@
 import "@/styles/globals.css";
+import Layout from "@/components/layout/Layout";
+import { Inter } from "next/font/google";
+import { StoreProvider } from "@/Store/Store";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+const inter = Inter({ subsets: ["latin"] });
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    // <main className={inter.className}> nie dziala
+    <main>
+      <StoreProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </StoreProvider>
+    </main>
+  );
 }

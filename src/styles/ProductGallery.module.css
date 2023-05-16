@@ -1,0 +1,77 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.gallery-current {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 0.5rem;
+  height: 20vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.scroll-item {
+  list-style: none;
+}
+
+.scroll-item img {
+  height: 100%;
+  width: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 60vh;
+  }
+
+  .gallery-scroll {
+    flex-direction: column;
+    height: calc(60vh - 2rem); /*2rem because gallery pading is 1rem a*/
+    width: 20vw;
+    flex-basis: auto;
+    overflow-y: scroll;
+  }
+
+  .scroll-item img {
+    height: auto;
+    width: 100%;
+  }
+
+  .gallery-current {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    height: 80vh;
+    width: auto;
+  }
+
+  .gallery-scroll {
+    width: 10vw;
+    height: calc(80vh - 2rem); /*2rem because gallery pading is 1rem */
+  }
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1920px) {
+}
