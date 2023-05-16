@@ -6,7 +6,7 @@ import Image from "next/image";
 const SizeChart = (props) => {
   return (
     <>
-      <div className={styles.backdrop} onClick={props.onClose} />;
+      <div className={styles.backdrop} onClick={props.onClose} />
       <div className={styles.modal}>
         <button className={styles.close} onClick={props.onClose}>
           <FontAwesomeIcon icon={faTimes} />

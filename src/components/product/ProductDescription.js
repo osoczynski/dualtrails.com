@@ -36,7 +36,6 @@ const ProductDescription = (props) => {
     if (product.sizes)
       return (
         <>
-          {worrning && <p className={styles.worrning}>Zaznacz rozmiar</p>}
           <ul className={styles.sizes}>
             {product.sizes.map((size) => (
               <li
@@ -52,6 +51,7 @@ const ProductDescription = (props) => {
               </li>
             ))}
           </ul>
+          {worrning && <p className={styles.worrning}>Zaznacz rozmiar</p>}
 
           <p className={styles.sizechart} onClick={props.onClick}>
             tabela rozmairów <FontAwesomeIcon icon={faRuler} />
@@ -76,12 +76,9 @@ const ProductDescription = (props) => {
         ))}
       </div>
       <Sizes />
-      <div className={styles.buttons}>
-        <button onClick={addtoCartHandler} className={styles.button}>
-          Dodaj do koszyka
-        </button>
-        <button className={styles.button}>zamow</button>
-      </div>
+      <button onClick={addtoCartHandler} className={styles.button}>
+        Dodaj do koszyka
+      </button>
     </div>
   );
 };

@@ -1,23 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/styles/ProductGallery.module.css";
-import Card from "../UI/Card";
 
 const ProductGallery = (props) => {
   const product = props.product;
   const [currentPhoto, setCurrentPhoto] = useState(product.images[0]);
 
-  // if (const existItem = state.cart.cartItems.find)(
-  //      (item) =>
-  //        item.slug === newItem.slug && item.activeSize === newItem.activeSize
-  //    );
-  //   setCurrentPhoto(product.images[0]);
-  // }
-  // )
-  // console.log(currentPhoto);
+  useEffect(() => {
+    setCurrentPhoto(product.images[0]);
+  }, [product.images[0]]);
 
   const handelClick = (event) => {
-    setCurrentPhoto(event.target.alt); //// Dlacaego nie działa z src ?
+    setCurrentPhoto(event.target.alt);
   };
   return (
     <div className={styles.gallery}>

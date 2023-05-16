@@ -1,5 +1,5 @@
 .layout {
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 21rem);
   width: 100vw;
   overflow: hidden;
   display: flex;
@@ -8,6 +8,9 @@
 }
 
 @media (min-width: 768px) {
+  .layout {
+    min-height: calc(100vh - 12rem);
+  }
 }
 
 @media (min-width: 1024px) {

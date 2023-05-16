@@ -23,7 +23,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.findUs}>
-        <p>Follow Us</p>
+        <p>Find Us</p>
         <div className={styles.socialMedia}>
           <a
             href="https://www.instagram.com/dualtrails/"

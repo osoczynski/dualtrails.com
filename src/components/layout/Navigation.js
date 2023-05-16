@@ -41,26 +41,29 @@ export default function Navigation() {
           <Image src={Logo} alt="logoimg" width={630} height={224} />
         </Link>
       </div>
-
-      <ul
-        className={`${styles["navbar-menu"]} ${navClick ? "" : styles.active}`}
-      >
-        <li>
-          <Link href="/products" onClick={handelNavClick}>
-            products
-          </Link>
-        </li>
-        <li>
-          <Link href="/cracworx" onClick={handelNavClick}>
-            cracworx
-          </Link>
-        </li>
-        <li>
-          <Link href="/about-us" onClick={handelNavClick}>
-            about as
-          </Link>
-        </li>
-      </ul>
+      <div className={`${styles.backdrop} ${navClick ? styles.active : ""}`}>
+        <ul
+          className={`${styles["navbar-menu"]} ${
+            navClick ? styles.active : ""
+          }`}
+        >
+          <li>
+            <Link href="/products" onClick={handelNavClick}>
+              products
+            </Link>
+          </li>
+          <li>
+            <Link href="/cracworx" onClick={handelNavClick}>
+              cracworx
+            </Link>
+          </li>
+          <li>
+            <Link href="/about-us" onClick={handelNavClick}>
+              about as
+            </Link>
+          </li>
+        </ul>
+      </div>
       <CartButton onClick={handelCartClick} />
       <Cart clicked={cartClick} onHide={handelCartClick} />
     </nav>

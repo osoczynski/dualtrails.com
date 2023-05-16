@@ -3,19 +3,39 @@
   top: 5rem;
   right: 0;
   width: 100%;
+  height: calc(100vh - 5rem);
   background-color: white;
   padding: 1rem;
   z-index: 10;
   transition: 0.4s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
+  height: 3rem;
   text-align: center;
   font-size: 0.9rem;
   padding: 1rem 2rem;
   background-color: lightgray;
   border-radius: 10px;
+}
+
+.items {
+  height: calc(100vh - 17rem);
+  overflow: auto;
+  padding: 0 0.5rem;
+}
+
+.ship {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.checkout {
+  height: 5rem;
 }
 
 .total {
@@ -24,6 +44,7 @@
   align-items: center;
   font-weight: bold;
   font-size: 1rem;
+  padding: 0 0.5rem;
   margin: 1rem 0;
 }
 
@@ -32,17 +53,18 @@
 }
 
 .buy {
-  display: block;
-  margin: 0 auto;
+  width: 100%;
   justify-content: center;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
   font-weight: 600;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
   background-color: lightgray;
   cursor: pointer;
   border: none;
+  border-radius: 10px;
+  transition: 0.2s;
 }
 
 .buy:hover {
-  color: white;
+  color: gray;
 }

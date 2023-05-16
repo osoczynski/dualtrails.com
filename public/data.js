@@ -1,7 +1,7 @@
 const data = {
   products: [
     {
-      name: "bluza - klin",
+      name: "Bluza - Klin",
       slug: "hoodie-klin",
       category: "bluzy",
       images: [
@@ -13,6 +13,7 @@ const data = {
       ],
       price: 200,
       oldPrice: 250,
+      description: "Klin w Polsce nie znaczy czysto",
       atributes: [
         "Materiał: 100% bawełna",
         "Gramatura: 280g",
@@ -21,12 +22,11 @@ const data = {
         "Wyprodukowane w Polsce",
         "Model 184cm rozmiar XL",
       ],
-      sizes: ["m"],
+      sizes: ["M"],
       sizeChart: "/images/sizes/sizechart-hoodie.jpg",
-      description: "opis",
     },
     {
-      name: "butelka termiczna 600ml",
+      name: "Butelka termiczna",
       slug: "thermal-bootle-600ml",
       category: "akcesoria",
       images: [
@@ -37,6 +37,7 @@ const data = {
       ],
       price: 100,
       oldPrice: 0,
+      description: "Na sucho to nawet trawa nie urośnie",
       atributes: [
         "Materiał: Stal nierdzewna",
         "Pojemność: 600ml",
@@ -46,10 +47,9 @@ const data = {
         "Utrzymuje zimno do 24h",
         "Kolor: czarny",
       ],
-      description: "opis",
     },
     {
-      name: "t-shirt cracworx",
+      name: "T-shirt cracworx",
       category: "koszulki",
       slug: "t-shirt-cracworx",
       images: [
@@ -66,12 +66,12 @@ const data = {
         "Wyprodukowane w polsce",
         "Model 170cm rozmiar M",
       ],
-      description: "opis",
-      sizes: ["m", "l", "xl", "xxl"],
+      description: "Sky is the limit",
+      sizes: ["M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
     },
     {
-      name: "t-shirt kosmos",
+      name: "T-shirt kosmos",
       category: "koszulki",
       slug: "t-shirt-cosmos",
       images: [
@@ -91,34 +91,36 @@ const data = {
         "Wyprodukowane w polsce",
         "Model 184cm rozmiar L",
       ],
-      description: "opis",
-      sizes: ["m", "l", "xl", "xxl"],
+      description: "Jaki kraj taki Crankworx",
+      sizes: ["M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
     },
     {
-      name: "skarpety - białe",
+      name: "Skarpety - białe",
       category: "skarpety",
       slug: "socks-white",
       images: ["/images/products/product5/foto1.jpg"],
       price: 40,
       oldPrice: 0,
       atributes: ["Kolor: biały", "Wyprodukowane w Polsce"],
-      description: "opis",
-      sizes: ["s", "m", "l"],
+      description: "",
+      sizes: ["S", "M", "L"],
+      sizeChart: "/images/sizes/sizechart-socks.jpg",
     },
     {
-      name: "skarpety - czarne",
+      name: "Skarpety - czarne",
       category: "skarpety",
       slug: "socks-black",
       images: ["/images/products/product6/foto1.jpg"],
       price: 40,
       oldPrice: 0,
       atributes: ["Kolor: czarny", "Wyprodukowane w Polsce"],
-      description: "opis",
-      sizes: ["s", "m", "l"],
+      description: "",
+      sizes: ["S", "M", "L"],
+      sizeChart: "/images/sizes/sizechart-socks.jpg",
     },
     {
-      name: "zestaw naklejek",
+      name: "Zestaw naklejek",
       category: "akcesoria",
       slug: "stickers",
       images: [
@@ -147,7 +149,7 @@ const data = {
       ],
       price: 40,
       oldPrice: 0,
-      description: "opis",
+      description: "",
       atributes: ["Materiał: Stal", "Pojemnoć: 350ml", "Kolor: Czarny"],
     },
   ],
