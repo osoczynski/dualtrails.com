@@ -78,7 +78,9 @@ const ProductDescription = (props) => {
       <Sizes />
       <div className={styles.buttons}>
         <button className={styles.button}>
-          <a href={product.url}>Zamów</a>
+          <a href={product.url} target="_blank">
+            Zamów
+          </a>
         </button>
         <button onClick={addtoCartHandler} className={styles.button}>
           Dodaj do koszyka
