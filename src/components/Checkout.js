@@ -1,10 +1,26 @@
 import styles from "@/styles/Checkout.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faCopy } from "@fortawesome/free-solid-svg-icons";
 
 const Checkout = (props) => {
   const cartItems = props.cartItems;
-  const sum = cartItems.reduce((t, a) => t + a.quantity * a.price, 0) + 17;
+  const price = cartItems.reduce((t, a) => t + a.quantity * a.price, 0) + 17;
+  const value =
+    cartItems.map(
+      (item) =>
+        ` ${item.name}${item.activeSize ? " " + item.activeSize : ""}${
+          item.quantity > 1 ? " x" + item.quantity : ""
+        }`
+    ) +
+    " Suma:" +
+    price +
+    "PLN";
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(value);
+    window.open("https://zrzutka.pl/kuh8fm/pay/jhjkk8", "_blank");
+  };
+
   return (
     <>
       <div className={styles.backdrop} onClick={props.onClose} />
@@ -12,24 +28,32 @@ const Checkout = (props) => {
         <button className={styles.close} onClick={props.onClose}>
           <FontAwesomeIcon icon={faTimes} />
         </button>
-        <h2 className={styles.title}>Ta Funkcja aktualnie jest niedostepna</h2>
-        {/* <p>
-          W celu sfinalizowania zamoienia skopiuj ponizsze informacje oraz wklej
-          je jako komentarz do zamowienia. W polu Twój adres wprowadź kod
-          paczkomatu
-        </p>
-        <div>
+        <h2 className={styles.title}>
+          Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana
+          oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować
+          zamówienie.
+        </h2>
+        <div className={styles.summary}>
+          <FontAwesomeIcon
+            icon={faCopy}
+            className={styles.copy}
+            onClick={() => {
+              navigator.clipboard.writeText(value);
+            }}
+          />
           {cartItems.map((item) => (
             <p key={`${item.slug}-${item.activeSize}`}>
-              {item.name} {item.activeSize ? item.activeSize : ""} x{" "}
-              {item.quantity}{" "}
+              {item.name} {item.activeSize ? item.activeSize : ""}
+              {item.quantity > 1 ? " x " + item.quantity : ""}
             </p>
           ))}
-          Razem {cartItems.reduce((t, a) => t + a.quantity * a.price, 0) + 17}
+          Suma: {price}
+          PLN
         </div>
-        <button onClick={() => navigator.clipboard.writeText(sum)}>
+
+        <button className={styles.confirm} onClick={handleCopy}>
           Copy & Go
-        </button> */}
+        </button>
       </div>
     </>
   );

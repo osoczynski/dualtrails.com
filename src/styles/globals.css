@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: #efefef;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,6 +18,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1 {

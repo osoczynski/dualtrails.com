@@ -54,7 +54,7 @@ const ProductDescription = (props) => {
           {worrning && <p className={styles.worrning}>Zaznacz rozmiar</p>}
 
           <p className={styles.sizechart} onClick={props.onClick}>
-            tabela rozmairów <FontAwesomeIcon icon={faRuler} />
+            Tabela rozmairów <FontAwesomeIcon icon={faRuler} />
           </p>
         </>
       );
@@ -76,9 +76,14 @@ const ProductDescription = (props) => {
         ))}
       </div>
       <Sizes />
-      <button onClick={addtoCartHandler} className={styles.button}>
-        Dodaj do koszyka
-      </button>
+      <div className={styles.buttons}>
+        <button className={styles.button}>
+          <a href={product.url}>Zamów</a>
+        </button>
+        <button onClick={addtoCartHandler} className={styles.button}>
+          Dodaj do koszyka
+        </button>
+      </div>
     </div>
   );
 };

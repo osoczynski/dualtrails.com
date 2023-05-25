@@ -24,6 +24,7 @@ const data = {
       ],
       sizes: ["M"],
       sizeChart: "/images/sizes/sizechart-hoodie.jpg",
+      url: "https://zrzutka.pl/kuh8fm/pay/uyjgx8",
     },
     {
       name: "Butelka termiczna",
@@ -47,6 +48,7 @@ const data = {
         "Utrzymuje zimno do 24h",
         "Kolor: czarny",
       ],
+      url: ["https://zrzutka.pl/kuh8fm/pay/4ep6ds"],
     },
     {
       name: "T-shirt cracworx",
@@ -66,9 +68,10 @@ const data = {
         "Wyprodukowane w polsce",
         "Model 170cm rozmiar M",
       ],
-      description: "Sky is the limit",
+      description: "Jaki kraj taki Crankworx",
       sizes: ["M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
+      url: ["https://zrzutka.pl/kuh8fm/pay/z2hzzb"],
     },
     {
       name: "T-shirt kosmos",
@@ -91,9 +94,10 @@ const data = {
         "Wyprodukowane w polsce",
         "Model 184cm rozmiar L",
       ],
-      description: "Jaki kraj taki Crankworx",
+      description: "Sky is the limit",
       sizes: ["M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
+      url: "https://zrzutka.pl/kuh8fm/pay/e46pnp",
     },
     {
       name: "Skarpety - białe",
@@ -106,6 +110,7 @@ const data = {
       description: "",
       sizes: ["S", "M", "L"],
       sizeChart: "/images/sizes/sizechart-socks.jpg",
+      url: "https://zrzutka.pl/kuh8fm/pay/acvdem",
     },
     {
       name: "Skarpety - czarne",
@@ -118,6 +123,7 @@ const data = {
       description: "",
       sizes: ["S", "M", "L"],
       sizeChart: "/images/sizes/sizechart-socks.jpg",
+      url: "https://zrzutka.pl/kuh8fm/pay/d5yxwk",
     },
     {
       name: "Zestaw naklejek",
@@ -138,9 +144,10 @@ const data = {
         "2szt Dual (kolor biały)",
         "2szt Dual (kolor czarny)",
       ],
+      url: "https://zrzutka.pl/kuh8fm/pay/947ju7",
     },
     {
-      name: "kubek 350ml",
+      name: "Kubek 350ml",
       category: "akcesoria",
       slug: "mug",
       images: [
@@ -151,6 +158,7 @@ const data = {
       oldPrice: 0,
       description: "",
       atributes: ["Materiał: Stal", "Pojemnoć: 350ml", "Kolor: Czarny"],
+      url: "https://zrzutka.pl/kuh8fm/pay/3rmnnz",
     },
   ],
   sliderIamges: [

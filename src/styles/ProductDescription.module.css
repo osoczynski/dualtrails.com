@@ -70,6 +70,10 @@
   color: red;
 }
 
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
 .button {
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
@@ -80,9 +84,13 @@
   border: none;
 }
 
-@media (min-width: 1024px) {
+.button a {
+  color: black;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
   .description {
-    align-items: start;
+    margin: 0;
   }
 }
 

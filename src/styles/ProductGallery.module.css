@@ -41,7 +41,7 @@
 
   .gallery-scroll {
     flex-direction: column;
-    height: calc(60vh - 2rem); /*2rem because gallery pading is 1rem a*/
+    height: calc(60vh - 2rem); /*2rem because gallery pading is 1rem and card*/
     width: 20vw;
     flex-basis: auto;
     overflow-y: scroll;
@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (orientation: landscape) {
   .gallery {
     height: 80vh;
     width: auto;
