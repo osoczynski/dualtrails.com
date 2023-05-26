@@ -5,6 +5,8 @@ import styles from "@/styles/ProductScreen.module.css";
 import ProductDescription from "@/components/product/ProductDescription";
 import ProductGallery from "@/components/product/ProductGallery";
 import SizeChart from "@/components/product/SizeChart";
+import SEO from "@/components/SEO";
+import ProductsCarousele from "@/components/ProductsCarousel";
 
 export default function ProductScreen() {
   const [sizeChart, setSizeChart] = useState(false);
@@ -21,10 +23,12 @@ export default function ProductScreen() {
 
   return (
     <>
+      <SEO pageTitle={product.name} pageDescription={product.name} />
       <div className={styles["product-screen"]}>
         <ProductGallery product={product} />
         <ProductDescription onClick={SizeChartHandler} product={product} />
       </div>
+      <ProductsCarousele />
       {sizeChart && (
         <SizeChart onClose={SizeChartHandler} image={product.sizeChart} />
       )}

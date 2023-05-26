@@ -1,14 +1,11 @@
-import Head from "next/head";
+import SEO from "@/components/SEO";
 import Slider from "@/components/Slider";
 import ProductsCarousele from "@/components/ProductsCarousel";
 
 export default function Home(props) {
   return (
     <>
-      <Head>
-        <title>Dual Trails Webpage</title>
-        <meta name="description" content="Dual Trails Webpage!" />
-      </Head>
+      <SEO pageTitle="Dual Trails" pageDescription="Homepage" />
       <Slider />
       <ProductsCarousele />
     </>

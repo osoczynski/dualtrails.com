@@ -64,9 +64,9 @@ const ProductDescription = (props) => {
     <div className={styles.description}>
       <h1 className={styles["product-name"]}>{product.name}</h1>
       <div className={styles.prices}>
-        <span className={styles["price-old"]}>
-          {product.oldPrice ? `${product.oldPrice} PLN` : ""}
-        </span>
+        {product.oldPrice !== 0 && (
+          <span className={styles["price-old"]}> {product.oldPrice} PLN </span>
+        )}
         <span className={styles["price-new"]}>{product.price} PLN</span>
       </div>
       <div className={styles.text}>{product.description}</div>

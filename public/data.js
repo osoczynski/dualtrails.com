@@ -11,8 +11,8 @@ const data = {
         "/images/products/product1/foto4.jpg",
         "/images/products/product1/foto5.jpg",
       ],
-      price: 200,
-      oldPrice: 250,
+      price: 250,
+      oldPrice: 0,
       description: "Klin w Polsce nie znaczy czysto",
       atributes: [
         "Materiał: 100% bawełna",

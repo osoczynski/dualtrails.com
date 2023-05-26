@@ -21,6 +21,7 @@ const ProductGallery = (props) => {
         alt="current-img"
         width={920}
         height={1280}
+        priority={true}
       />
 
       <ul className={styles["gallery-scroll"]}>
@@ -33,6 +34,7 @@ const ProductGallery = (props) => {
               height={1280}
               onClick={handelClick}
               onMouseOver={handelClick}
+              priority={true}
             />
           </li>
         ))}

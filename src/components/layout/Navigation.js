@@ -38,7 +38,13 @@ export default function Navigation() {
 
       <div className={styles["navbar-image"]} onClick={handleLogoClick}>
         <Link href="/">
-          <Image src={Logo} alt="logoimg" width={630} height={224} />
+          <Image
+            src={Logo}
+            alt="logoimg"
+            width={630}
+            height={224}
+            priority={true}
+          />
         </Link>
       </div>
       <div className={`${styles.backdrop} ${navClick ? styles.active : ""}`}>
@@ -59,7 +65,7 @@ export default function Navigation() {
           </li>
           <li>
             <Link href="/about-us" onClick={handelNavClick}>
-              about as
+              about us
             </Link>
           </li>
         </ul>

@@ -14,6 +14,7 @@ export default function ProductsItem({ product }) {
             alt={product.name}
             width={920}
             height={1280}
+            priority={true}
           />
         </div>
         <div className={styles.text}>

@@ -38,15 +38,13 @@
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.7rem;
+  font-weight: bold;
+  color: black;
 }
 
 .price-old {
   text-decoration: line-through;
   color: gray;
-}
-
-.price-new {
-  font-weight: normal;
 }
 
 @media (min-width: 768px) {

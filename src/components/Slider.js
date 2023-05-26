@@ -17,7 +17,13 @@ const Slider = () => {
       >
         {data.sliderIamges.map((photo) => (
           <SwiperSlide key={photo}>
-            <Image src={photo} alt="slider" width={1920} height={1080} />
+            <Image
+              src={photo}
+              alt="slider"
+              width={1920}
+              height={1080}
+              priority={true}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

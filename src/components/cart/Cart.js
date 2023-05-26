@@ -40,8 +40,8 @@ const Cart = (props) => {
             </div>
             <div className={styles.checkout}>
               <div className={styles.total}>
-                <span>Suma</span>
                 <span>
+                  Suma:{" "}
                   {cartItems.reduce((t, a) => t + a.quantity * a.price, 0) + 17}
                   PLN
                 </span>
