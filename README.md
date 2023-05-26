@@ -1,35 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+![Logo](https://www.dualtrails.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogoblack.568e4d84.png&w=640&q=75)
 
-First, run the development server:
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+
+## Online store website - Dualtrails.com
+
+Dualtrails.com is a online store website created with Next.js
+
+
+
+
+## Table Of Content
+
+- [Demo](#demo)
+- [Tech Stack](#tech-Stack)
+- [Deploy on Vercel](#deploy-on-vercel)
+- [Installation](#installation)
+
+## Tech Stack
+
+**Framework:** Next.js
+
+**Styling:** CSS Modules
+
+
+## Demo
+
+www.dualtrails.com
+
+## Installation
+
+After you clone this repo to your desktop, go to its root directory and run npm install to install its dependencies.
+
+Once the dependencies are installed, you can npm run dev to start the application.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Clone this repository
+$ git clone https://github.com/osoczynski/dualtrails.com.git
+
+# Go into the repository
+$ cd dualtrails.com
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
