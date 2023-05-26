@@ -6,13 +6,13 @@
   gap: 1rem;
 }
 
-.gallery-current {
+.galleryCurrent {
   width: 100%;
   height: auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.gallery-scroll {
+.galleryScroll {
   display: flex;
   gap: 0.5rem;
   height: 20vh;
@@ -22,13 +22,7 @@
   justify-content: flex-start;
 }
 
-.scroll-item {
-  aspect-ratio: 3/4;
-  list-style: none;
-  overflow: hidden;
-}
-
-.scroll-item img {
+.scrollItem {
   height: 100%;
   width: auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -41,7 +35,7 @@
     height: 60vh;
   }
 
-  .gallery-scroll {
+  .galleryScroll {
     flex-direction: column;
     height: calc(60vh - 2rem); /*2rem because gallery pading is 1rem and card*/
     width: 20vw;
@@ -49,12 +43,12 @@
     overflow-y: scroll;
   }
 
-  .scroll-item img {
+  .scrollItem {
     height: auto;
     width: 100%;
   }
 
-  .gallery-current {
+  .galleryCurrent {
     width: auto;
     height: 100%;
   }
@@ -66,7 +60,7 @@
     width: auto;
   }
 
-  .gallery-scroll {
+  .galleryScroll {
     width: 10vw;
     height: calc(80vh - 2rem); /*2rem because gallery pading is 1rem */
   }

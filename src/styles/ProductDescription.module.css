@@ -81,6 +81,7 @@
   background-color: lightgray;
   cursor: pointer;
   border: none;
+  color: black;
 }
 
 .button a {

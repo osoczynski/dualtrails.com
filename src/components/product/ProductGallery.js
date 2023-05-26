@@ -16,7 +16,7 @@ const ProductGallery = (props) => {
   return (
     <div className={styles.gallery}>
       <Image
-        className={styles["gallery-current"]}
+        className={styles.galleryCurrent}
         src={currentPhoto}
         alt="current-img"
         width={920}
@@ -24,21 +24,21 @@ const ProductGallery = (props) => {
         priority={true}
       />
 
-      <ul className={styles["gallery-scroll"]}>
+      <div className={styles.galleryScroll}>
         {product.images.map((img) => (
-          <li key={img} className={styles["scroll-item"]}>
-            <Image
-              src={img}
-              alt={img}
-              width={920}
-              height={1280}
-              onClick={handelClick}
-              onMouseOver={handelClick}
-              priority={true}
-            />
-          </li>
+          <Image
+            className={styles.scrollItem}
+            key={img}
+            src={img}
+            alt={img}
+            width={920}
+            height={1280}
+            onClick={handelClick}
+            onMouseOver={handelClick}
+            priority={true}
+          />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
