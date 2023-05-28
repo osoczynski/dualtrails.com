@@ -2,9 +2,9 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import data from "../../../public/data";
 import styles from "@/styles/ProductScreen.module.css";
-import ProductDescription from "@/components/product/ProductDescription";
-import ProductGallery from "@/components/product/ProductGallery";
-import SizeChart from "@/components/product/SizeChart";
+import ProductDescription from "@/components/product screen/ProductDescription";
+import ProductGallery from "@/components/product screen/ProductGallery";
+import SizeChart from "@/components/product screen/SizeChart";
 import SEO from "@/components/SEO";
 import ProductsCarousele from "@/components/ProductsCarousel";
 
@@ -24,7 +24,7 @@ export default function ProductScreen() {
   return (
     <>
       <SEO pageTitle={product.name} pageDescription={product.name} />
-      <div className={styles["product-screen"]}>
+      <div className={styles.productScreen}>
         <ProductGallery product={product} />
         <ProductDescription onClick={SizeChartHandler} product={product} />
       </div>

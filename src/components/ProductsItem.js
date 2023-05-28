@@ -18,12 +18,12 @@ export default function ProductsItem({ product }) {
           />
         </div>
         <div className={styles.text}>
-          <p className={styles["product-name"]}>{product.name}</p>
-          <div className={styles["product-price"]}>
-            <span className={styles["price-old"]}>
+          <p className={styles.productName}>{product.name}</p>
+          <div className={styles.productPrice}>
+            <span className={styles.priceOld}>
               {product.oldPrice ? `${product.oldPrice} PLN` : ""}
             </span>
-            <span className={styles["price-new"]}>{product.price} PLN </span>
+            <span className={styles.priceNew}>{product.price} PLN </span>
           </div>
         </div>
       </Link>

@@ -28,33 +28,22 @@
   padding: 0.5rem 0;
 }
 
-.product-name {
+.productName {
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.product-price {
+.productPrice {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.7rem;
-  font-weight: bold;
-  color: black;
-}
-
-.price-old {
-  text-decoration: line-through;
+  font-weight: 700;
   color: gray;
 }
 
-@media (min-width: 768px) {
-}
-
-@media (min-width: 1024px) {
-}
-
-@media (min-width: 1440px) {
-}
-
-@media (min-width: 1920px) {
+.priceOld {
+  text-decoration: line-through;
+  color: var(--second-bg-color);
 }

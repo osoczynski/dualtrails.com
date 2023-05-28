@@ -1,4 +1,4 @@
-.product-screen {
+.productScreen {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,7 +8,7 @@
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-  .product-screen {
+  .productScreen {
     flex-direction: row;
     justify-content: center;
   }

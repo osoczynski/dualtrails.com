@@ -36,7 +36,7 @@ export default function Navigation() {
         )}
       </button>
 
-      <div className={styles["navbar-image"]} onClick={handleLogoClick}>
+      <div className={styles.navbarImage} onClick={handleLogoClick}>
         <Link href="/">
           <Image
             src={Logo}
@@ -48,11 +48,7 @@ export default function Navigation() {
         </Link>
       </div>
       <div className={`${styles.backdrop} ${navClick ? styles.active : ""}`}>
-        <ul
-          className={`${styles["navbar-menu"]} ${
-            navClick ? styles.active : ""
-          }`}
-        >
+        <ul className={`${styles.navbarMenu} ${navClick ? styles.active : ""}`}>
           <li>
             <Link href="/products" onClick={handelNavClick}>
               products

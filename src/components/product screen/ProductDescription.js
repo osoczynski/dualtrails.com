@@ -40,7 +40,7 @@ const ProductDescription = (props) => {
             {product.sizes.map((size) => (
               <li
                 key={size}
-                className={`${styles["size-item"]} ${
+                className={`${styles.sizeItem} ${
                   activeSize === size ? styles.active : ""
                 }`}
                 onClick={() => {
@@ -62,12 +62,12 @@ const ProductDescription = (props) => {
 
   return (
     <div className={styles.description}>
-      <h1 className={styles["product-name"]}>{product.name}</h1>
+      <h1 className={styles.productName}>{product.name}</h1>
       <div className={styles.prices}>
         {product.oldPrice !== 0 && (
-          <span className={styles["price-old"]}> {product.oldPrice} PLN </span>
+          <span className={styles.priceOld}> {product.oldPrice} PLN </span>
         )}
-        <span className={styles["price-new"]}>{product.price} PLN</span>
+        <span className={styles.priceNew}>{product.price} PLN</span>
       </div>
       <div className={styles.text}>{product.description}</div>
       <div className={styles.atributes}>
