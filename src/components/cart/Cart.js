@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import Checkout from "../Checkout";
 
 const Cart = (props) => {
+  const language = props.locale;
   const { state } = useContext(Store);
   const {
     cart: { cartItems },
@@ -21,11 +22,17 @@ const Cart = (props) => {
       <div className={`${styles.cart} ${props.clicked ? "" : styles.active}`}>
         {cartItems.length === 0 ? (
           <div>
-            <h1 className={styles.title}>Koszyk jest pusty</h1>
+            <h1 className={styles.title}>
+              {language === "en"
+                ? "Your cart is empty"
+                : "Twój koszyk jest pusty"}
+            </h1>
           </div>
         ) : (
           <div>
-            <h1 className={styles.title}>Koszyk</h1>
+            <h1 className={styles.title}>
+              {language === "en" ? "Cart" : "Koszyk"}
+            </h1>
             <div className={styles.items}>
               {cartItems.map((item) => (
                 <CartItem
@@ -35,19 +42,31 @@ const Cart = (props) => {
                 />
               ))}
               <div className={styles.ship}>
-                <span>Koszt wysyłki InPost 17PLN</span>
+                <span>
+                  {language === "en"
+                    ? "Shipping cost 4 € in Poland / 20 € in Europe"
+                    : "Koszt wysyłki InPost 17 PLN"}
+                </span>
               </div>
             </div>
             <div className={styles.checkout}>
               <div className={styles.total}>
                 <span>
-                  Suma:{" "}
-                  {cartItems.reduce((t, a) => t + a.quantity * a.price, 0) + 17}
-                  PLN
+                  {language === "en"
+                    ? `Total ${cartItems.reduce(
+                        (t, a) => t + a.quantity * a.priceEURO,
+                        0
+                      )} €`
+                    : `Suma ${
+                        cartItems.reduce(
+                          (t, a) => t + a.quantity * a.pricePLN,
+                          0
+                        ) + 17
+                      } PLN`}
                 </span>
               </div>
               <button className={styles.buy} onClick={CheckoutHandler}>
-                Zamów
+                {language === "en" ? "Order" : "Zamów"}
               </button>
             </div>
           </div>

@@ -3,8 +3,11 @@ import styles from "@/styles/AboutUs.module.css";
 import data from "../../public/data";
 import Card from "@/components/UI/Card";
 import SEO from "@/components/SEO";
+import { useRouter } from "next/router";
 
 export default function AboutUs() {
+  const { locale } = useRouter();
+
   return (
     <>
       <SEO pageTitle="About Us" pageDescription="About Us" />
@@ -22,7 +25,10 @@ export default function AboutUs() {
 
         {data.aboutUs.map((section) => (
           <div key={section.id} className={styles.story}>
-            <p>{section.description}</p>
+            <p>
+              {locale === "en" ? section.descriptionENG : section.descriptionPL}
+            </p>
+
             <div className={styles.img}>
               <Card>
                 <Image

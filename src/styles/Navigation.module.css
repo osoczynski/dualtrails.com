@@ -1,6 +1,6 @@
 .navbar {
   position: sticky;
-  padding: 2rem;
+  padding: 2rem 0.5rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,6 +39,25 @@
 .navbar a:hover {
   cursor: pointer;
   color: black;
+}
+
+.languageAndCart {
+  display: flex;
+  gap: 1rem;
+}
+
+.globe {
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+}
+
+.globe p {
+  font-size: 0.6rem;
+  text-transform: uppercase;
 }
 
 .hamburger {

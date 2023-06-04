@@ -2,12 +2,10 @@
   background: none;
   border: none;
   color: black;
-  padding: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 2rem;
-  width: 2rem;
   font-size: 1.75rem;
   transition: 0.2s;
   cursor: pointer;

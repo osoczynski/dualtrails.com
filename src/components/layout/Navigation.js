@@ -3,24 +3,34 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/Navigation.module.css";
 import Logo from "../../assets/logoblack.png";
+
 import CartButton from "./CartButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../cart/Cart";
 
-export default function Navigation() {
+function Navigation(props) {
+  const locale = props.locale;
+  const [language, setLanguage] = useState("eng");
+  const handleLanguageChange = () => {
+    if (language === "eng") {
+      setLanguage("pl");
+      props.languageChange("en");
+    } else {
+      setLanguage("eng");
+      props.languageChange("pl");
+    }
+  };
   const [navClick, setNavClick] = useState(false);
   const handelNavClick = () => {
     if (cartClick) setCartClick(!cartClick);
     setNavClick(!navClick);
   };
-
   const [cartClick, setCartClick] = useState(false);
   const handelCartClick = () => {
     if (navClick) setNavClick(!navClick);
     setCartClick(!cartClick);
   };
-
   const handleLogoClick = () => {
     if (navClick) setNavClick(!navClick);
     if (cartClick) setCartClick(!cartClick);
@@ -47,11 +57,12 @@ export default function Navigation() {
           />
         </Link>
       </div>
+
       <div className={`${styles.backdrop} ${navClick ? styles.active : ""}`}>
         <ul className={`${styles.navbarMenu} ${navClick ? styles.active : ""}`}>
           <li>
             <Link href="/products" onClick={handelNavClick}>
-              products
+              {locale === "en" ? "products" : "produkty"}
             </Link>
           </li>
           <li>
@@ -61,13 +72,25 @@ export default function Navigation() {
           </li>
           <li>
             <Link href="/about-us" onClick={handelNavClick}>
-              about us
+              {locale === "en" ? "about us" : "o nas"}
             </Link>
           </li>
         </ul>
       </div>
-      <CartButton onClick={handelCartClick} />
-      <Cart clicked={cartClick} onHide={handelCartClick} />
+      <div className={styles.languageAndCart}>
+        <div className={styles.globe} onClick={handleLanguageChange}>
+          <FontAwesomeIcon icon={faGlobe} />
+          <p>{language}</p>
+        </div>
+        <CartButton onClick={handelCartClick} />
+      </div>
+      <Cart
+        clicked={cartClick}
+        onHide={handelCartClick}
+        locale={props.locale}
+      />
     </nav>
   );
 }
+
+export default Navigation;

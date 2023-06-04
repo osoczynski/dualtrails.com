@@ -9,11 +9,12 @@ import {
 import zrzutka from "../../assets/zrzutka.png";
 import Image from "next/image";
 
-export default function Footer() {
+export default function Footer(props) {
+  const language = props.locale;
   return (
     <footer className={styles.footer}>
       <div className={styles.contact}>
-        <p>Contact</p>
+        <p>{language === "en" ? "contact" : "kontakt"}</p>
         <div className={styles.mail}>
           <a href="mailto:info@dualtrails.com" className={styles.icon}>
             <FontAwesomeIcon icon={faEnvelope} />
@@ -23,7 +24,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.findUs}>
-        <p>Find Us</p>
+        <p>{language === "en" ? "find us" : "znajdź nas"}</p>
         <div className={styles.socialMedia}>
           <a
             href="https://www.instagram.com/dualtrails/"
@@ -41,7 +42,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.zrzutka}>
-        <p>Help us grow</p>
+        <p>{language === "en" ? "help us grow" : "zrzutka"}</p>
         <a href="https://zrzutka.pl/z/dualtrails" className={styles.pig}>
           <Image src={zrzutka} alt="zrzutka" width={340} height={325} />
         </a>

@@ -3,8 +3,10 @@ import { faRuler } from "@fortawesome/free-solid-svg-icons";
 import styles from "@/styles/ProductDescription.module.css";
 import { useContext, useState } from "react";
 import { Store } from "@/Store/Store";
+import { useRouter } from "next/router";
 
 const ProductDescription = (props) => {
+  const { locale } = useRouter();
   const product = props.product;
   const { state, dispatch } = useContext(Store);
 
@@ -51,10 +53,15 @@ const ProductDescription = (props) => {
               </li>
             ))}
           </ul>
-          {worrning && <p className={styles.worrning}>Zaznacz rozmiar</p>}
+          {worrning && (
+            <p className={styles.worrning}>
+              {locale === "en" ? "Choose the size" : "Zaznacz rozmiar"}
+            </p>
+          )}
 
           <p className={styles.sizechart} onClick={props.onClick}>
-            Tabela rozmairów <FontAwesomeIcon icon={faRuler} />
+            {locale === "en" ? "Size chart " : "Tabela rozmiarów "}
+            <FontAwesomeIcon icon={faRuler} />
           </p>
         </>
       );
@@ -62,28 +69,44 @@ const ProductDescription = (props) => {
 
   return (
     <div className={styles.description}>
-      <h1 className={styles.productName}>{product.name}</h1>
+      <h1 className={styles.productName}>
+        {locale === "en" ? product.nameENG : product.namePL}
+      </h1>
       <div className={styles.prices}>
-        {product.oldPrice !== 0 && (
-          <span className={styles.priceOld}> {product.oldPrice} PLN </span>
+        {product.oldPricePLN !== 0 && (
+          <span className={styles.priceOld}>
+            {locale === "en"
+              ? product.oldPriceEURO + " €"
+              : product.oldPricePLN + " PLN"}
+          </span>
         )}
-        <span className={styles.priceNew}>{product.price} PLN</span>
+        <span className={styles.priceNew}>
+          {locale === "en"
+            ? product.priceEURO + " €"
+            : product.pricePLN + " PLN"}
+        </span>
       </div>
-      <div className={styles.text}>{product.description}</div>
+      <div className={styles.text}>
+        {locale === "en" ? product.descriptionENG : product.descriptionPL}
+      </div>
       <div className={styles.atributes}>
-        {product.atributes.map((atribut) => (
-          <li key={atribut}>{atribut}</li>
-        ))}
+        {locale === "en"
+          ? product.atributesENG.map((atribut) => (
+              <li key={atribut}>{atribut}</li>
+            ))
+          : product.atributesPL.map((atribut) => (
+              <li key={atribut}>{atribut}</li>
+            ))}
       </div>
       <Sizes />
       <div className={styles.buttons}>
         <button className={styles.button}>
           <a href={product.url} target="_blank">
-            Zamów
+            {locale === "en" ? "Order" : "Zamów"}
           </a>
         </button>
         <button onClick={addtoCartHandler} className={styles.button}>
-          Dodaj do koszyka
+          {locale === "en" ? "Add to cart" : "Dodaj do koszyka"}
         </button>
       </div>
     </div>

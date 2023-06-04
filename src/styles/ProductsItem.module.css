@@ -1,6 +1,9 @@
 .product {
   display: flex;
   flex-direction: column;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
 }
 
 .imgContainer {

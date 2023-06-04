@@ -1,12 +1,14 @@
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@/styles/globals.css";
 import Layout from "@/components/layout/Layout";
 import { StoreProvider } from "@/Store/Store";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import { appWithTranslation } from "next-i18next";
+
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <main>
       <StoreProvider>
@@ -17,3 +19,5 @@ export default function MyApp({ Component, pageProps }) {
     </main>
   );
 }
+
+export default appWithTranslation(MyApp);
