@@ -5,10 +5,12 @@ import { useRouter } from "next/router";
 import Cookies from "js-cookie";
 
 function Layout(props) {
-  const { locale, locales, push } = useRouter();
+  const router = useRouter();
+  const locale = router.locale;
 
   const languageChange = (l) => {
-    push("/", undefined, { locale: l });
+    const path = router.asPath;
+    router.push(path, path, { locale: l });
     Cookies.set("language", l);
   };
 

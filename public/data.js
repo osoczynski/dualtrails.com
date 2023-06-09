@@ -22,7 +22,7 @@ const data = {
       atributesENG: [
         "Matirial: 100% cotton",
         "Grammage: 280g",
-        "Color: czarny",
+        "Color: black",
         "Slim fit",
         "Made in Poland",
         "Model 184cm size XL",
@@ -65,7 +65,7 @@ const data = {
         "Dishwasher friendly",
         "Hot up to 12h",
         "Cold up to 24h",
-        "Color: czarny",
+        "Color: black",
       ],
       url: ["https://zrzutka.pl/kuh8fm/pay/4ep6ds"],
       images: [
@@ -97,7 +97,7 @@ const data = {
       atributesENG: [
         "Matirial: 100% cotton",
         "Grammage: 180g",
-        "Color: czarny",
+        "Color: black",
         "Regular fit",
         "Made in Poland",
         "Model 170cm size M",
@@ -132,7 +132,7 @@ const data = {
       atributesENG: [
         "Matirial: 100% cotton",
         "Grammage: 180g",
-        "Color: czarny",
+        "Color: black",
         "Regular fit",
         "Made in Poland",
         "Model 184cm size L",
@@ -227,7 +227,7 @@ const data = {
       descriptionPL: "",
       descriptionENG: "",
       atributesPL: ["Materiał: Stal", "Pojemnoć: 350ml", "Kolor: Czarny"],
-      atributesENG: ["Matirial: Steel", "Capacity: 350ml", "Color: Czarny"],
+      atributesENG: ["Matirial: Steel", "Capacity: 350ml", "Color: black"],
       url: "https://zrzutka.pl/kuh8fm/pay/3rmnnz",
       images: [
         "/images/products/product8/foto1.jpg",

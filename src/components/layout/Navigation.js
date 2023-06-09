@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/Navigation.module.css";
@@ -11,13 +11,11 @@ import Cart from "../cart/Cart";
 
 function Navigation(props) {
   const locale = props.locale;
-  const [language, setLanguage] = useState("eng");
+
   const handleLanguageChange = () => {
-    if (language === "eng") {
-      setLanguage("pl");
+    if (locale === "pl") {
       props.languageChange("en");
     } else {
-      setLanguage("eng");
       props.languageChange("pl");
     }
   };
@@ -80,7 +78,7 @@ function Navigation(props) {
       <div className={styles.languageAndCart}>
         <div className={styles.globe} onClick={handleLanguageChange}>
           <FontAwesomeIcon icon={faGlobe} />
-          <p>{language}</p>
+          <p>{locale}</p>
         </div>
         <CartButton onClick={handelCartClick} />
       </div>
