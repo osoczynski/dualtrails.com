@@ -7,20 +7,18 @@ const Checkout = (props) => {
   const { locale } = useRouter();
 
   const cartItems = props.cartItems;
-  const price = cartItems.reduce((t, a) => t + a.quantity * a.price, 0) + 17;
-  const value =
+  const copyValue =
     cartItems.map(
       (item) =>
-        ` ${item.name}${item.activeSize ? " " + item.activeSize : ""}${
-          item.quantity > 1 ? " x" + item.quantity : ""
-        }`
+        ` ${locale === "en" ? item.nameENG : item.namePL} ${
+          item.activeSize ? item.activeSize : ""
+        }${item.quantity > 1 ? " x" + item.quantity : ""}`
     ) +
-    " Suma:" +
-    price +
-    "PLN";
+    " " +
+    props.sum;
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(value);
+    await navigator.clipboard.writeText(copyValue);
     window.open("https://zrzutka.pl/kuh8fm/pay/jhjkk8", "_blank");
   };
 
@@ -41,17 +39,17 @@ const Checkout = (props) => {
             icon={faCopy}
             className={styles.copy}
             onClick={() => {
-              navigator.clipboard.writeText(value);
+              navigator.clipboard.writeText(copyValue);
             }}
           />
           {cartItems.map((item) => (
             <p key={`${item.slug}-${item.activeSize}`}>
-              {item.name} {item.activeSize ? item.activeSize : ""}
+              {locale === "en" ? item.nameENG + " " : item.namePL + " "}
+              {item.activeSize ? item.activeSize : ""}
               {item.quantity > 1 ? " x " + item.quantity : ""}
             </p>
           ))}
-          Suma: {price}
-          PLN
+          {props.sum}
         </div>
 
         <button className={styles.confirm} onClick={handleCopy}>

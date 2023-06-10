@@ -17,6 +17,15 @@ const Cart = (props) => {
     setCheckout(!checkout);
   };
 
+  const sum =
+    language === "en"
+      ? `Total ${
+          cartItems.reduce((t, a) => t + a.quantity * a.priceEURO, 0) + 20
+        } €`
+      : `Suma ${
+          cartItems.reduce((t, a) => t + a.quantity * a.pricePLN, 0) + 17
+        } PLN`;
+
   return (
     <>
       <div className={`${styles.cart} ${props.clicked ? "" : styles.active}`}>
@@ -51,19 +60,7 @@ const Cart = (props) => {
             </div>
             <div className={styles.checkout}>
               <div className={styles.total}>
-                <span>
-                  {language === "en"
-                    ? `Total ${cartItems.reduce(
-                        (t, a) => t + a.quantity * a.priceEURO,
-                        0
-                      )} €`
-                    : `Suma ${
-                        cartItems.reduce(
-                          (t, a) => t + a.quantity * a.pricePLN,
-                          0
-                        ) + 17
-                      } PLN`}
-                </span>
+                <span>{sum}</span>
               </div>
               <button className={styles.buy} onClick={CheckoutHandler}>
                 {language === "en" ? "Order" : "Zamów"}
@@ -72,7 +69,9 @@ const Cart = (props) => {
           </div>
         )}
       </div>
-      {checkout && <Checkout onClose={CheckoutHandler} cartItems={cartItems} />}
+      {checkout && (
+        <Checkout onClose={CheckoutHandler} cartItems={cartItems} sum={sum} />
+      )}
     </>
   );
 };
