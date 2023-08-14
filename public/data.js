@@ -27,6 +27,7 @@ const data = {
       url: "https://zrzutka.pl/kuh8fm/pay/gsmhrt",
       images: ["/images/products/product11/foto1.jpg"],
     },
+
     {
       slug: "t-shirt-cracworx",
       category: "t-shirts",
