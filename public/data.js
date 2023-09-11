@@ -55,7 +55,7 @@ const data = {
         "Made in Poland",
         "Model 170cm size M",
       ],
-      sizes: ["M", "L", "XXL"],
+      sizes: ["L", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
       url: ["https://zrzutka.pl/kuh8fm/pay/z2hzzb"],
       images: [
