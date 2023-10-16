@@ -29,10 +29,21 @@ const Checkout = (props) => {
         <button className={styles.close} onClick={props.onClose}>
           <FontAwesomeIcon icon={faTimes} />
         </button>
-        <h2 className={styles.title}>
+        {/* <h2 className={styles.title}>
           {locale === "en"
             ? "Your cart has been copied. If you like to go further press the button "
-            : "Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować zamówienie"}
+            : "Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować zamówienie. /n 1. Zmień cenę 2. W polu Twój adres należy podać kod paczkomatu 3.@ wiadomości do wpłaty wklej listę produktów "}
+        </h2> */}
+        <h2 className={styles.title}>
+          Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana
+          oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować
+          zamówienie.
+          <p>
+            <br></br>
+          </p>
+          <p>1. Zmień cenę poprzez nacinięcie przycisku inna kwota</p>
+          <p>2. W polu Twój adres podaj kod paczkomatu InPost</p>
+          <p>3. W wiadomości do wpłaty wklej listę produktów </p>
         </h2>
         <div className={styles.summary}>
           <FontAwesomeIcon

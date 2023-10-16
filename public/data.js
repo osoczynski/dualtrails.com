@@ -1,4 +1,6 @@
 const data = {
+  shipPLN: 17,
+  shipEUR: 20,
   products: [
     {
       slug: "5panel-cap",

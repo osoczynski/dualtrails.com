@@ -67,6 +67,10 @@ const ProductDescription = (props) => {
       );
   };
 
+  const buyHandler = () => {
+    alert("W polu Twój adres należy podać kod paczkomatu oraz rozmiar");
+  };
+
   return (
     <div className={styles.description}>
       <h1 className={styles.productName}>
@@ -100,7 +104,7 @@ const ProductDescription = (props) => {
       </div>
       <Sizes />
       <div className={styles.buttons}>
-        <button className={styles.button}>
+        <button className={styles.button} onClick={buyHandler}>
           <a href={product.url} target="_blank">
             {locale === "en" ? "Order" : "Zamów"}
           </a>

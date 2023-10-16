@@ -4,6 +4,7 @@ import styles from "@/styles/Cart.module.css";
 import CartItem from "./CartItem";
 import dynamic from "next/dynamic";
 import Checkout from "../Checkout";
+import data from "../../../public/data";
 
 const Cart = (props) => {
   const language = props.locale;
@@ -17,14 +18,14 @@ const Cart = (props) => {
     setCheckout(!checkout);
   };
 
+  const sumPLN = cartItems.reduce((t, a) => t + a.quantity * a.pricePLN, 0);
+  const sumEUR =
+    cartItems.reduce((t, a) => t + a.quantity * a.priceEURO, 0) + data.sumEUR;
+
   const sum =
     language === "en"
-      ? `Total ${
-          cartItems.reduce((t, a) => t + a.quantity * a.priceEURO, 0) + 20
-        } €`
-      : `Suma ${
-          cartItems.reduce((t, a) => t + a.quantity * a.pricePLN, 0) + 17
-        } PLN`;
+      ? `Total ${sumEUR} €`
+      : `Suma ${sumPLN >= 100 ? sumPLN : sumPLN + data.shipPLN} PLN`;
 
   return (
     <>
