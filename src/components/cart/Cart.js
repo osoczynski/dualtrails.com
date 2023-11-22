@@ -20,12 +20,12 @@ const Cart = (props) => {
 
   const sumPLN = cartItems.reduce((t, a) => t + a.quantity * a.pricePLN, 0);
   const sumEUR =
-    cartItems.reduce((t, a) => t + a.quantity * a.priceEURO, 0) + data.sumEUR;
+    cartItems.reduce((t, a) => t + a.quantity * a.priceEURO, 0) + data.shipEUR;
 
   const sum =
     language === "en"
       ? `Total ${sumEUR} €`
-      : `Suma ${sumPLN >= 100 ? sumPLN : sumPLN + data.shipPLN} PLN`;
+      : `Suma ${sumPLN >= data.freeShip ? sumPLN : sumPLN + data.shipPLN} PLN`;
 
   return (
     <>
