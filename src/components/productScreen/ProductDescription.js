@@ -77,7 +77,7 @@ const ProductDescription = (props) => {
         {locale === "en" ? product.nameENG : product.namePL}
       </h1>
       <div className={styles.prices}>
-        {product.oldPricePLN !== 0 && (
+        {product.oldPricePLN !== 0 && product.oldPriceEURO !== 0 && (
           <span className={styles.priceOld}>
             {locale === "en"
               ? product.oldPriceEURO + " €"
