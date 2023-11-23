@@ -56,8 +56,8 @@ const Cart = (props) => {
                   {language === "en"
                     ? "Shipping cost 4 € in Poland / 20 € in Europe"
                     : sumPLN >= data.freeShip
-                    ? "Koszt wysyłki InPost 17 PLN"
-                    : ""}
+                    ? ""
+                    : "Koszt wysyłki InPost 17 PLN"}
                 </span>
               </div>
             </div>
