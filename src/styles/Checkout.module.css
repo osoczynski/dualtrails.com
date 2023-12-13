@@ -28,6 +28,11 @@
   font-size: 1rem;
 }
 
+.message {
+  width: 100%;
+  height: auto;
+}
+
 .close {
   position: absolute;
   right: 0.5rem;

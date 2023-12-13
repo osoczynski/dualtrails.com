@@ -19,8 +19,6 @@ function Home() {
   return (
     <>
       <SEO pageTitle="Dual Trails" pageDescription="Homepage" />
-      {/* <div><p>{t("")}</p></div> */}
-
       <Slider />
       <ProductsCarousele />
     </>

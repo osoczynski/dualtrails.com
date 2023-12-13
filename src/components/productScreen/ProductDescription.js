@@ -68,7 +68,7 @@ const ProductDescription = (props) => {
   };
 
   const buyHandler = () => {
-    alert("W polu Twój adres należy podać kod paczkomatu oraz rozmiar");
+    alert("W polu adres należy podać kod paczkomatu oraz rozmiar");
   };
 
   return (

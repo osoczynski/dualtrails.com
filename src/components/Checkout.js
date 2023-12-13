@@ -2,6 +2,8 @@ import styles from "@/styles/Checkout.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faCopy } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
+import Logo from "../../public/images/wiadomosc.jpg";
+import Image from "next/image";
 
 const Checkout = (props) => {
   const { locale } = useRouter();
@@ -45,6 +47,12 @@ const Checkout = (props) => {
           <p>2. W polu Twój adres podaj kod paczkomatu InPost</p>
           <p>3. W wiadomości do wpłaty wklej listę produktów </p>
         </h2>
+        <Image
+          className={styles.message}
+          src={Logo}
+          alt="message"
+          priority={true}
+        />
         <div className={styles.summary}>
           <FontAwesomeIcon
             icon={faCopy}
