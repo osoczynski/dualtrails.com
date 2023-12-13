@@ -1,5 +1,5 @@
 const data = {
-  freeShip: 150,
+  freeShip: 200,
   shipPLN: 17,
   shipEUR: 20,
   discount: 70,
@@ -59,7 +59,7 @@ const data = {
         "Made in Poland",
         "Model 170cm size M",
       ],
-      sizes: ["L", "XXL"],
+      sizes: ["L"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
       url: ["https://zrzutka.pl/kuh8fm/pay/z2hzzb"],
       images: [
@@ -132,7 +132,7 @@ const data = {
         "Made in Poland",
       ],
 
-      sizes: ["M", "L", "XL", "XXL"],
+      sizes: ["M", "L", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
       url: "https://zrzutka.pl/kuh8fm/pay/g9g76r",
       images: [
