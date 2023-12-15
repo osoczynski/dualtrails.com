@@ -34,7 +34,7 @@ const data = {
 
       sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-long.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/e46pnp",
+      url: "https://zrzutka.pl/kuh8fm/pay/km6mrf",
       images: [
         "/images/products/product12/foto1.jpg",
         "/images/products/product12/foto2.jpg",
@@ -58,7 +58,7 @@ const data = {
         "Gramatura: 180g",
         "Kolor: czarny",
         "Krój: regular fit",
-        "Wyprodukowane w polsce",
+        "Wyprodukowane w Polsce",
         "Oskar 184cm - rozmiar L",
       ],
       atributesENG: [
@@ -72,7 +72,7 @@ const data = {
 
       sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-long.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/e46pnp",
+      url: "https://zrzutka.pl/kuh8fm/pay/ks8nf9",
       images: [
         "/images/products/product13/foto1.jpg",
         "/images/products/product13/foto2.jpg",
