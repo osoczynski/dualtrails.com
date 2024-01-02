@@ -22,7 +22,7 @@ const CartItem = (props) => {
         className={styles.product}
         onClick={props.onHide}
       >
-        <Image src={item.images[0]} alt={item.nameENG} width={45} height={60} />
+        <Image src={item.images[0]} alt={item.nameENG} width={48} height={60} />
         <h2 className={styles.title}>
           {locale === "en" ? item.nameENG : item.namePL}
         </h2>

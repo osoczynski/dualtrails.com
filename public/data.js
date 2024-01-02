@@ -1,5 +1,5 @@
 const data = {
-  freeShip: 200,
+  freeShip: 250,
   shipPLN: 17,
   shipEUR: 20,
   discount: 70,
@@ -34,7 +34,7 @@ const data = {
 
       sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-long.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/km6mrf",
+      url: "https://zrzutka.pl/jv5ze9/pay/z5vkv9",
       images: [
         "/images/products/product12/foto1.jpg",
         "/images/products/product12/foto2.jpg",
@@ -72,7 +72,7 @@ const data = {
 
       sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-long.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/ks8nf9",
+      url: "https://zrzutka.pl/jv5ze9/pay/btzrgd",
       images: [
         "/images/products/product13/foto1.jpg",
         "/images/products/product13/foto2.jpg",
@@ -84,10 +84,10 @@ const data = {
       category: "accesories",
       namePL: "Czapka 5 Panel",
       nameENG: "5 Panel Cap",
-      pricePLN: 70,
-      oldPricePLN: 100,
-      priceEURO: 16,
-      oldPriceEURO: 24,
+      pricePLN: 100,
+      oldPricePLN: 0,
+      priceEURO: 24,
+      oldPriceEURO: 0,
       descriptionPL: "",
       descriptionENG: "",
       atributesPL: [
@@ -103,7 +103,7 @@ const data = {
         "Made in Poland",
         "Uni Size",
       ],
-      url: "https://zrzutka.pl/kuh8fm/pay/gsmhrt",
+      url: "https://zrzutka.pl/jv5ze9/pay/s6yvk4",
       images: ["/images/products/product11/foto1.jpg"],
     },
     {
@@ -111,10 +111,10 @@ const data = {
       category: "t-shirts",
       namePL: "T-shirt Cracworx",
       nameENG: "T-shirt Cracworx",
-      pricePLN: 70,
-      oldPricePLN: 100,
-      priceEURO: 16,
-      oldPriceEURO: 24,
+      pricePLN: 100,
+      oldPricePLN: 0,
+      priceEURO: 24,
+      oldPriceEURO: 16,
       descriptionPL: "Jaki kraj taki Crankworx",
       descriptionENG: "In Cracow we don't have Crankworx, we have Cracworx",
       atributesPL: [
@@ -135,7 +135,7 @@ const data = {
       ],
       sizes: ["L"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
-      url: ["https://zrzutka.pl/kuh8fm/pay/z2hzzb"],
+      url: ["https://zrzutka.pl/jv5ze9/pay/s6yvk4"],
       images: [
         "/images/products/product3/foto1.jpg",
         "/images/products/product3/foto2.jpg",
@@ -146,10 +146,10 @@ const data = {
       category: "t-shirts",
       namePL: "T-shirt Kosmos",
       nameENG: "T-shirt Cosmos",
-      pricePLN: 70,
-      oldPricePLN: 100,
-      priceEURO: 16,
-      oldPriceEURO: 24,
+      pricePLN: 100,
+      oldPricePLN: 70,
+      priceEURO: 24,
+      oldPriceEURO: 0,
       descriptionPL: "Sky is the limit",
       descriptionENG: "Sky is the limit",
       atributesPL: [
@@ -171,13 +171,11 @@ const data = {
 
       sizes: ["L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/e46pnp",
+      url: "https://zrzutka.pl/jv5ze9/pay/bjxm8p",
       images: [
         "/images/products/product4/foto1.jpg",
         "/images/products/product4/foto2.jpg",
         "/images/products/product4/foto3.jpg",
-        "/images/products/product4/foto4.jpg",
-        "/images/products/product4/foto5.jpg",
       ],
     },
     {
@@ -185,10 +183,10 @@ const data = {
       category: "t-shirts",
       namePL: "T-shirt Klin",
       nameENG: "T-shirt Klin",
-      pricePLN: 70,
-      oldPricePLN: 100,
-      priceEURO: 16,
-      oldPriceEURO: 24,
+      pricePLN: 100,
+      oldPricePLN: 0,
+      priceEURO: 24,
+      oldPriceEURO: 0,
       descriptionPL: "Klin w Polsce nie znaczy czystko",
       descriptionENG: "",
       atributesPL: [
@@ -208,7 +206,7 @@ const data = {
 
       sizes: ["M", "L", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/g9g76r",
+      url: "https://zrzutka.pl/jv5ze9/pay/9v5haf",
       images: [
         "/images/products/product10/foto1.jpg",
         "/images/products/product10/foto2.jpg",
@@ -219,10 +217,10 @@ const data = {
       category: "t-shirts",
       namePL: "T-shirt Sun Logo",
       nameENG: "T-shirt Sun Logo",
-      pricePLN: 70,
-      oldPricePLN: 100,
-      priceEURO: 16,
-      oldPriceEURO: 24,
+      pricePLN: 100,
+      oldPricePLN: 0,
+      priceEURO: 24,
+      oldPriceEURO: 0,
       descriptionPL: "Who loves the sun",
       descriptionENG: "Who loves the sun",
       atributesPL: [
@@ -242,7 +240,7 @@ const data = {
 
       sizes: ["M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/ru5pcd",
+      url: "https://zrzutka.pl/jv5ze9/pay/hc58ub",
       images: [
         "/images/products/product9/foto1.jpg",
         "/images/products/product9/foto2.jpg",
@@ -254,10 +252,10 @@ const data = {
       category: "accesories",
       namePL: "Butelka termiczna",
       nameENG: "Thermal bottle",
-      pricePLN: 70,
-      oldPricePLN: 100,
-      priceEURO: 16,
-      oldPriceEURO: 24,
+      pricePLN: 100,
+      oldPricePLN: 0,
+      priceEURO: 24,
+      oldPriceEURO: 0,
       descriptionPL: "Na sucho to nawet trawa nie urośnie",
       descriptionENG: "Even grass doesn't grow when it's dry",
       atributesPL: [
@@ -278,7 +276,7 @@ const data = {
         "Cold up to 24h",
         "Color: black",
       ],
-      url: ["https://zrzutka.pl/kuh8fm/pay/4ep6ds"],
+      url: ["https://zrzutka.pl/jv5ze9/pay/6rahtk"],
       images: [
         "/images/products/product2/foto1.jpg",
         "/images/products/product2/foto2.jpg",
@@ -301,7 +299,7 @@ const data = {
       atributesENG: ["Color: White", "Made in Poland"],
       sizes: ["S", "M", "L"],
       sizeChart: "/images/sizes/sizechart-socks.jpg",
-      url: "https://zrzutka.pl/kuh8fm/pay/acvdem",
+      url: "https://zrzutka.pl/jv5ze9/pay/ga6764",
       images: ["/images/products/product5/foto1.jpg"],
     },
     {
@@ -326,7 +324,7 @@ const data = {
         "2pcs Dual Logo (white)",
         "2pcs Dual Logo (black)",
       ],
-      url: "https://zrzutka.pl/kuh8fm/pay/947ju7",
+      url: "https://zrzutka.pl/jv5ze9/pay/ezsw86",
       images: [
         "/images/products/product7/foto1.jpg",
         "/images/products/product7/foto2.jpg",

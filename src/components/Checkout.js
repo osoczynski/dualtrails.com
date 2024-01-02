@@ -21,7 +21,7 @@ const Checkout = (props) => {
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(copyValue);
-    window.open("https://zrzutka.pl/kuh8fm/pay/jhjkk8", "_blank");
+    window.open("https://zrzutka.pl/jv5ze9/pay/57kefk", "_blank");
   };
 
   return (

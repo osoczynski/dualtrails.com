@@ -12,7 +12,7 @@ export default function ProductsItem({ product }) {
           className={styles.img}
           src={product.images[0]}
           alt={product.nameENG}
-          width={920}
+          width={1024}
           height={1280}
           priority={true}
         />

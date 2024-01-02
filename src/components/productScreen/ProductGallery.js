@@ -19,7 +19,7 @@ const ProductGallery = (props) => {
         className={styles.galleryCurrent}
         src={currentPhoto}
         alt="current-img"
-        width={920}
+        width={1024}
         height={1280}
         priority={true}
       />
@@ -31,7 +31,7 @@ const ProductGallery = (props) => {
             key={img}
             src={img}
             alt={img}
-            width={920}
+            width={1024}
             height={1280}
             onClick={handelClick}
             onMouseOver={handelClick}
