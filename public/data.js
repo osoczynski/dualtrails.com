@@ -103,7 +103,7 @@ const data = {
         "Made in Poland",
         "Uni Size",
       ],
-      url: "https://zrzutka.pl/jv5ze9/pay/s6yvk4",
+      url: "https://zrzutka.pl/jv5ze9/pay/2vmezb",
       images: ["/images/products/product11/foto1.jpg"],
     },
     {
@@ -147,7 +147,7 @@ const data = {
       namePL: "T-shirt Kosmos",
       nameENG: "T-shirt Cosmos",
       pricePLN: 100,
-      oldPricePLN: 70,
+      oldPricePLN: 0,
       priceEURO: 24,
       oldPriceEURO: 0,
       descriptionPL: "Sky is the limit",

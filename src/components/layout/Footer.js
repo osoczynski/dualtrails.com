@@ -43,7 +43,7 @@ export default function Footer(props) {
 
       <div className={styles.zrzutka}>
         <p>{language === "en" ? "help us grow" : "zrzutka"}</p>
-        <a href="https://zrzutka.pl/z/dualtrails" className={styles.pig}>
+        <a href="https://zrzutka.pl/z/website" className={styles.pig}>
           <Image src={zrzutka} alt="zrzutka" width={340} height={325} />
         </a>
       </div>
