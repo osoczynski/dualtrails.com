@@ -32,7 +32,7 @@ const data = {
       ],
       sizes: ["S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizechart-tshirt.jpg",
-      url: ["https://zrzutka.pl/jv5ze9/pay/s6yvk4"],
+      url: ["https://zrzutka.pl/jv5ze9/pay/jjeapp"],
       images: [
         "/images/products/product15/foto1.jpg",
         "/images/products/product15/foto2.jpg",
@@ -65,8 +65,8 @@ const data = {
         "Model 184cm size XL",
       ],
       sizes: ["S", "M", "L", "XL", "XXL"],
-      sizeChart: "/images/sizes/sizechart-tshirt.jpg",
-      url: ["https://zrzutka.pl/jv5ze9/pay/s6yvk4"],
+      sizeChart: "/images/sizes/sizechart-hoodie-new.jpg",
+      url: ["https://zrzutka.pl/jv5ze9/pay/p4vgvv"],
       images: [
         "/images/products/product14/foto1.jpg",
         "/images/products/product14/foto2.jpg",
@@ -385,9 +385,9 @@ const data = {
       descriptionENG: "",
       atributesPL: ["Kolor: Czarny", "Wyprodukowane w Polsce"],
       atributesENG: ["Color: Black", "Made in Poland"],
-      sizes: ["S", "M", "L"],
+      sizes: ["S", "M"],
       sizeChart: "/images/sizes/sizechart-socks.jpg",
-      url: "https://zrzutka.pl/jv5ze9/pay/ga6764",
+      url: "https://zrzutka.pl/jv5ze9/pay/nu5bnf",
       images: [
         "/images/products/product6/foto1.jpg",
         "/images/products/product6/foto2.jpg",
