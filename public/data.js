@@ -31,7 +31,7 @@ const data = {
         "Model 184cm size XL",
       ],
       sizes: ["S", "M", "L", "XL", "XXL"],
-      sizeChart: "/images/sizes/sizechart-tshirt.jpg",
+      sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: ["https://zrzutka.pl/jv5ze9/pay/jjeapp"],
       images: [
         "/images/products/product15/foto1.jpg",
@@ -52,20 +52,22 @@ const data = {
       descriptionENG: "Hang Time",
       atributesPL: [
         "Materiał: 100% bawełna",
+        "Gramatura: 280g",
         "Kolor: czarny",
         "Krój: regular fit",
         "Wyprodukowane w polsce",
-        "Model 184cm rozmiar XL",
+        "Oskar 184cm rozmiar XL",
       ],
       atributesENG: [
         "Matirial: 100% cotton",
+        "Grammage: 280g",
         "Color: black",
         "Regular fit",
         "Made in Poland",
-        "Model 184cm size XL",
+        "Oskar 184cm size XL",
       ],
       sizes: ["S", "M", "L", "XL", "XXL"],
-      sizeChart: "/images/sizes/sizechart-hoodie-new.jpg",
+      sizeChart: "/images/sizes/sizes-hoodie.jpg",
       url: ["https://zrzutka.pl/jv5ze9/pay/p4vgvv"],
       images: [
         "/images/products/product14/foto1.jpg",
@@ -101,8 +103,8 @@ const data = {
         "Pawel 177cm - size M, Mateusz 185cm - size XXL",
       ],
 
-      sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      sizeChart: "/images/sizes/sizechart-long.jpg",
+      sizes: ["XS", "S", "M", "L", "XL"],
+      sizeChart: "/images/sizes/sizes-long.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/z5vkv9",
       images: [
         "/images/products/product12/foto1.jpg",
@@ -139,8 +141,8 @@ const data = {
         "Oskar 184cm - size L",
       ],
 
-      sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      sizeChart: "/images/sizes/sizechart-long.jpg",
+      sizes: ["S", "M", "L", "XL"],
+      sizeChart: "/images/sizes/sizes-long.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/btzrgd",
       images: [
         "/images/products/product13/foto1.jpg",
@@ -204,7 +206,7 @@ const data = {
         "Model 170cm size M",
       ],
       sizes: ["L"],
-      sizeChart: "/images/sizes/sizechart-tshirt.jpg",
+      sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: ["https://zrzutka.pl/jv5ze9/pay/s6yvk4"],
       images: [
         "/images/products/product3/foto1.jpg",
@@ -228,7 +230,7 @@ const data = {
         "Kolor: czarny",
         "Krój: regular fit",
         "Wyprodukowane w polsce",
-        "Model 184cm rozmiar L",
+        "Model 184cm rozmiar XL",
       ],
       atributesENG: [
         "Matirial: 100% cotton",
@@ -236,11 +238,11 @@ const data = {
         "Color: black",
         "Regular fit",
         "Made in Poland",
-        "Model 184cm size L",
+        "Model 184cm size XL",
       ],
 
       sizes: ["L", "XL", "XXL"],
-      sizeChart: "/images/sizes/sizechart-tshirt.jpg",
+      sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/bjxm8p",
       images: [
         "/images/products/product4/foto1.jpg",
@@ -273,9 +275,8 @@ const data = {
         "Regular fit",
         "Made in Poland",
       ],
-
-      sizes: ["M", "L", "XXL"],
-      sizeChart: "/images/sizes/sizechart-tshirt.jpg",
+      sizes: ["L"],
+      sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/9v5haf",
       images: [
         "/images/products/product10/foto1.jpg",
@@ -308,8 +309,8 @@ const data = {
         "Made in Poland",
       ],
 
-      sizes: ["M", "L"],
-      sizeChart: "/images/sizes/sizechart-tshirt.jpg",
+      sizes: ["M", "L", "XL"],
+      sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/hc58ub",
       images: [
         "/images/products/product9/foto1.jpg",
@@ -365,10 +366,17 @@ const data = {
       oldPriceEURO: 9,
       descriptionPL: "",
       descriptionENG: "",
-      atributesPL: ["Kolor: biały", "Wyprodukowane w Polsce"],
+      atributesPL: [
+        "Kolor: biały",
+        "Wyprodukowane w Polsce",
+        "Skład",
+        "- Bawełna 80%",
+        "- Elastan 15%",
+        "- Gumitex 5%",
+      ],
       atributesENG: ["Color: White", "Made in Poland"],
-      sizes: ["L"],
-      sizeChart: "/images/sizes/sizechart-socks.jpg",
+      sizes: ["XL"],
+      sizeChart: "/images/sizes/sizes-socks.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/ga6764",
       images: ["/images/products/product5/foto1.jpg"],
     },
@@ -383,10 +391,17 @@ const data = {
       oldPriceEURO: 0,
       descriptionPL: "",
       descriptionENG: "",
-      atributesPL: ["Kolor: Czarny", "Wyprodukowane w Polsce"],
+      atributesPL: [
+        "Kolor: Czarny",
+        "Wyprodukowane w Polsce",
+        "Skład",
+        "- Bawełna 80%",
+        "- Elastan 15%",
+        "- Gumitex 5%",
+      ],
       atributesENG: ["Color: Black", "Made in Poland"],
-      sizes: ["S", "M"],
-      sizeChart: "/images/sizes/sizechart-socks.jpg",
+      sizes: ["S", "M", "L"],
+      sizeChart: "/images/sizes/sizes-socks.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/nu5bnf",
       images: [
         "/images/products/product6/foto1.jpg",
