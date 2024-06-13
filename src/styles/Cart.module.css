@@ -22,7 +22,7 @@
 }
 
 .items {
-  height: calc(100vh - 17rem);
+  height: calc(100vh - 19rem);
   overflow: auto;
   padding: 0 0.5rem;
 }
@@ -47,6 +47,15 @@
   font-weight: bold;
   font-size: 1rem;
   padding: 0 0.5rem;
+  margin: 1rem 0;
+}
+
+.promo {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: bold;
   margin: 1rem 0;
 }
 

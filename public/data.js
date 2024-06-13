@@ -2,6 +2,7 @@ const data = {
   freeShip: 500,
   shipPLN: 17,
   shipEUR: 20,
+  codes: ["ride4fun", "dual20"],
   products: [
     {
       slug: "t-shirt-compas",

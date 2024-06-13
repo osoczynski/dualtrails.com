@@ -18,6 +18,8 @@ const Cart = (props) => {
     setCheckout(!checkout);
   };
 
+  const [promovalue, setPromoValue] = useState("");
+
   const sumPLN = cartItems.reduce((t, a) => t + a.quantity * a.pricePLN, 0);
   const sumEUR =
     cartItems.reduce((t, a) => t + a.quantity * a.priceEURO, 0) + data.shipEUR;
@@ -25,7 +27,11 @@ const Cart = (props) => {
   const sum =
     language === "en"
       ? `Total ${sumEUR} €`
-      : `Suma ${sumPLN >= data.freeShip ? sumPLN : sumPLN + data.shipPLN} PLN`;
+      : `Suma ${
+          data.codes.includes(promovalue)
+            ? Math.round(sumPLN * 0.8) + data.shipPLN
+            : sumPLN + data.shipPLN
+        } PLN`;
 
   return (
     <>
@@ -64,6 +70,17 @@ const Cart = (props) => {
             <div className={styles.checkout}>
               <div className={styles.total}>
                 <span>{sum}</span>
+              </div>
+
+              <div className={styles.promo}>
+                <input
+                  type="text"
+                  placeholder="kod promocyjny"
+                  value={promovalue}
+                  onChange={(e) => {
+                    setPromoValue(e.currentTarget.value);
+                  }}
+                />
               </div>
               <button className={styles.buy} onClick={CheckoutHandler}>
                 {language === "en" ? "Order" : "Zamów"}
