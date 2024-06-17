@@ -242,7 +242,7 @@ const data = {
         "Model 184cm size XL",
       ],
 
-      sizes: ["L", "XL", "XXL"],
+      sizes: ["L", "XL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/bjxm8p",
       images: [
@@ -310,7 +310,7 @@ const data = {
         "Made in Poland",
       ],
 
-      sizes: ["M", "L", "XL"],
+      sizes: ["M", "L"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/hc58ub",
       images: [
