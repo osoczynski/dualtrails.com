@@ -18,7 +18,7 @@ function Layout(props) {
     <div>
       <Navigation languageChange={languageChange} locale={locale} />
       <div className={styles.layout}>{props.children}</div>
-      <Footer locale={locale} />
+      {/* <Footer locale={locale} /> */}
     </div>
   );
 }
