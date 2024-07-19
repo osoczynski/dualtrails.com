@@ -434,7 +434,7 @@ const data = {
     },
     {
       descriptionPL:
-        "Historia Dual Trails jest dłuższa niż mogłoby się wydawać. Trasy pojawiły się końcem XX wieku. Tor do dual slalomu był jednym z pierwszych i to od niego wywodzi się obecna nazwa miejscówki. Niestety dyscyplina ta z czasem mocno straciła na popularności, zbudowane trasy popadły w ruinę, a rowerowa społeczność tworząca to miejsce zniknęła.",
+        "Historia Dual Trails jest dłuższa niż mogłoby się wydawać. Trasy pojawiły się końcem XX wieku. Tor do dual slalomu był jednym z pierwszych i to od niego wywodzi się obecna nazwa miejscówki. Niestety dyscyplina ta z czasem mocno straciła na popularności, a z racji braku finansowania stan tras mocno się pogorszył.",
       descriptionENG:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quaerat officia, consequuntur eum eos aperiam nihil. Explicabo obcaecati temporibus deleniti. Reprehenderit maxime sunt accusantium placeat quis aperiam velit dolores.",
       photo: "/images/aboutus/img3.jpg",
@@ -442,7 +442,7 @@ const data = {
     },
     {
       descriptionPL:
-        "Kilka lat później, a dokładnie w 2015 roku postanowiono wybudować w tym samym miejscu linie o zupełnie innym charakterze. Dopiero po 2 latach kopania udało się uruchomić tor składający się z 9 przeszkód. Miejsce to przechodzi teraz swój renesans i kadego roku ściąga masę rowerzystów.",
+        " Kilka lat później, a dokładnie w 2015 roku dzięki oddolnym działanią wielopokoleniowej rowerowej społeczności udało się odremontować wszystkie instniejące trasy i przywrócić ich dawny blask. Miejsce to przechodzi teraz swój renesans.",
       descriptionENG:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam quaerat officia, consequuntur eum eos aperiam nihil. Explicabo obcaecati temporibus deleniti. Reprehenderit maxime sunt accusantium placeat quis aperiam velit dolores.",
       photo: "/images/aboutus/img4.jpg",
