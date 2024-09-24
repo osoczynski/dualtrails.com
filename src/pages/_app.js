@@ -8,16 +8,16 @@ import { appWithTranslation } from "next-i18next";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <main>
-      <StoreProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </StoreProvider>
-    </main>
-  );
-}
+// function MyApp({ Component, pageProps }) {
+//   return (
+//     <main>
+//       <StoreProvider>
+//         <Layout>
+//           <Component {...pageProps} />
+//         </Layout>
+//       </StoreProvider>
+//     </main>
+//   );
+// }
 
 export default appWithTranslation(MyApp);
