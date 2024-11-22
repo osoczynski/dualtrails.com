@@ -47,8 +47,8 @@ const data = {
       nameENG: "Hoodie Hang time",
       pricePLN: 200,
       oldPricePLN: 279,
-      priceEURO: 65,
-      oldPriceEURO: 0,
+      priceEURO: 50,
+      oldPriceEURO: 65,
       descriptionPL: "Hang Time",
       descriptionENG: "Hang Time",
       atributesPL: [
@@ -83,8 +83,8 @@ const data = {
       nameENG: "Digger Longsleeve",
       pricePLN: 100,
       oldPricePLN: 149,
-      priceEURO: 33,
-      oldPriceEURO: 0,
+      priceEURO: 25,
+      oldPriceEURO: 33,
       descriptionPL: "No Dig No Ride",
       descriptionENG: "No Dig No Ride",
       atributesPL: [
@@ -121,8 +121,8 @@ const data = {
       nameENG: "Digger Longsleeve Tie Dye",
       pricePLN: 120,
       oldPricePLN: 169,
-      priceEURO: 38,
-      oldPriceEURO: 0,
+      priceEURO: 30,
+      oldPriceEURO: 38,
       descriptionPL: "No Dig No Ride",
       descriptionENG: "No Dig No Ride",
       atributesPL: [
@@ -352,8 +352,8 @@ const data = {
       nameENG: "Socks - black",
       pricePLN: 30,
       oldPricePLN: 40,
-      priceEURO: 9,
-      oldPriceEURO: 0,
+      priceEURO: 7,
+      oldPriceEURO: 9,
       descriptionPL: "",
       descriptionENG: "",
       atributesPL: [
