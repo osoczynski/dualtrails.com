@@ -63,7 +63,7 @@ function Navigation(props) {
               {locale === "en" ? "products" : "produkty"}
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/cracworx" onClick={handelNavClick}>
               cracworx
             </Link>
@@ -72,7 +72,7 @@ function Navigation(props) {
             <Link href="/about-us" onClick={handelNavClick}>
               {locale === "en" ? "about us" : "o nas"}
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className={styles.languageAndCart}>

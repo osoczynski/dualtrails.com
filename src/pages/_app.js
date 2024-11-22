@@ -11,11 +11,11 @@ config.autoAddCss = false;
 function MyApp({ Component, pageProps }) {
   return (
     <main>
-      {/* <StoreProvider>
+      <StoreProvider>
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </StoreProvider> */}
+      </StoreProvider>
     </main>
   );
 }
