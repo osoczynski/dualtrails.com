@@ -104,7 +104,7 @@ const data = {
         "Pawel 177cm - size M, Mateusz 185cm - size XXL",
       ],
 
-      sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      sizes: ["S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-long.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/z5vkv9",
       images: [
