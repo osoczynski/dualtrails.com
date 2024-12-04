@@ -67,7 +67,7 @@ const data = {
         "Made in Poland",
         "Oskar 184cm size XL",
       ],
-      sizes: ["S", "M", "L", "XL", "XXL"],
+      sizes: ["S", "M", "L", "XL"],
       sizeChart: "/images/sizes/sizes-hoodie.jpg",
       url: ["https://zrzutka.pl/jv5ze9/pay/p4vgvv"],
       images: [
@@ -104,7 +104,7 @@ const data = {
         "Pawel 177cm - size M, Mateusz 185cm - size XXL",
       ],
 
-      sizes: ["S", "M", "L", "XL", "XXL"],
+      sizes: ["S", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-long.jpg",
       url: "https://zrzutka.pl/jv5ze9/pay/z5vkv9",
       images: [
