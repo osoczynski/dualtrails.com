@@ -2,8 +2,6 @@ import styles from "@/styles/Checkout.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faCopy } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
-import Logo from "../../public/images/wiadomosc.jpg";
-import Image from "next/image";
 
 const Checkout = (props) => {
   const { locale } = useRouter();
@@ -31,11 +29,7 @@ const Checkout = (props) => {
         <button className={styles.close} onClick={props.onClose}>
           <FontAwesomeIcon icon={faTimes} />
         </button>
-        {/* <h2 className={styles.title}>
-          {locale === "en"
-            ? "Your cart has been copied. If you like to go further press the button "
-            : "Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować zamówienie. /n 1. Zmień cenę 2. W sekcji dane kontaktowe podać kod paczkomatu 3. W polu Dodatkowe informacje należy wklej listę produktów wraz z rozmairami(ctrl+v lub wklej) "}
-        </h2> */}
+
         <h2 className={styles.title}>
           Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana
           oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować
