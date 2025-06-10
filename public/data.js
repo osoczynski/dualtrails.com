@@ -67,7 +67,7 @@ const data = {
       ],
       sizes: ["S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
-      url: ["https://zrzutka.pl/53sxwa/award/6ypy2x/t-shirt-n2o"],
+      url: ["https://zrzutka.pl/53sxwa/pay/6ypy2x"],
       images: [
         "/images/products/product16/foto1.jpg",
         "/images/products/product16/foto2.jpg",
@@ -100,9 +100,7 @@ const data = {
       ],
       sizes: ["S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
-      url: [
-        "https://zrzutka.pl/53sxwa/award/jzdfyw/t-shirt-anti-jibb-jibb-club",
-      ],
+      url: ["https://zrzutka.pl/53sxwa/pay/jzdfyw"],
       images: [
         "/images/products/product17/foto1.jpg",
         "/images/products/product17/foto2.jpg",
@@ -137,7 +135,7 @@ const data = {
       ],
       sizes: ["S", "M", "L", "XL"],
       sizeChart: "/images/sizes/sizes-hoodie.jpg",
-      url: ["https://zrzutka.pl/53sxwa/award/a2jjby/bluza-hang-time"],
+      url: ["https://zrzutka.pl/53sxwa/pay/a2jjby"],
       images: [
         "/images/products/product14/foto1.jpg",
         "/images/products/product14/foto2.jpg",
@@ -174,7 +172,7 @@ const data = {
 
       sizes: ["S", "M", "XL"],
       sizeChart: "/images/sizes/sizes-long.jpg",
-      url: "https://zrzutka.pl/53sxwa/award/p97d4j/longsleeve-digger",
+      url: "https://zrzutka.pl/53sxwa/pay/p97d4j",
       images: [
         "/images/products/product12/foto1.jpg",
         "/images/products/product12/foto2.jpg",
@@ -243,7 +241,7 @@ const data = {
         "Made in Poland",
         "Uni Size",
       ],
-      url: "https://zrzutka.pl/53sxwa/award/wt7hty/czapka-5panel-dual",
+      url: "https://zrzutka.pl/53sxwa/pay/wt7hty",
       images: ["/images/products/product11/foto1.jpg"],
     },
     {
@@ -276,7 +274,7 @@ const data = {
 
       sizes: ["S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
-      url: "https://zrzutka.pl/53sxwa/award/wt7hty/czapka-5panel-dual",
+      url: "https://zrzutka.pl/53sxwa/pay/h9fdck",
       images: [
         "/images/products/product4/foto1.jpg",
         "/images/products/product4/foto2.jpg",
@@ -310,7 +308,7 @@ const data = {
       ],
       sizes: ["S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
-      url: "https://zrzutka.pl/53sxwa/award/zmj9aj/t-shirt-klin",
+      url: "https://zrzutka.pl/53sxwa/pay/zmj9aj",
       images: [
         "/images/products/product10/foto1.jpg",
         "/images/products/product10/foto2.jpg",
@@ -410,7 +408,7 @@ const data = {
       atributesENG: ["Color: White", "Made in Poland"],
       sizes: ["XS", "S", "M", "L", "XL"],
       sizeChart: "/images/sizes/sizes-socks.jpg",
-      url: "https://zrzutka.pl/53sxwa/award/6czf7d/skarpety-dual-trails-biale",
+      url: "https://zrzutka.pl/53sxwa/pay/6czf7d",
       images: ["/images/products/product5/foto1.jpg"],
     },
     {
@@ -435,7 +433,7 @@ const data = {
       atributesENG: ["Color: Black", "Made in Poland"],
       sizes: ["XS", "S", "M", "L", "XL"],
       sizeChart: "/images/sizes/sizes-socks.jpg",
-      url: "https://zrzutka.pl/53sxwa/award/4mcpsj/skarpety-dual-trails-czarne",
+      url: "https://zrzutka.pl/53sxwa/pay/4mcpsj",
       images: [
         "/images/products/product6/foto1.jpg",
         "/images/products/product6/foto2.jpg",

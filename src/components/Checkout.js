@@ -21,7 +21,7 @@ const Checkout = (props) => {
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(copyValue);
-    window.open("https://zrzutka.pl/jv5ze9/pay/57kefk", "_blank");
+    window.open("https://zrzutka.pl/53sxwa/pay/gvfhwr", "_blank");
   };
 
   return (
@@ -34,7 +34,7 @@ const Checkout = (props) => {
         {/* <h2 className={styles.title}>
           {locale === "en"
             ? "Your cart has been copied. If you like to go further press the button "
-            : "Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować zamówienie. /n 1. Zmień cenę 2. W polu Twój adres należy podać kod paczkomatu 3.@ wiadomości do wpłaty wklej listę produktów "}
+            : "Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana oraz nastąpi przekierowanie na portal Zrzutka.pl, aby sfinalizować zamówienie. /n 1. Zmień cenę 2. W sekcji dane kontaktowe podać kod paczkomatu 3. W polu Dodatkowe informacje należy wklej listę produktów wraz z rozmairami(ctrl+v lub wklej) "}
         </h2> */}
         <h2 className={styles.title}>
           Po nacisnięciu przycisku zawartoć twojego koszyka zostanie skopiowana
@@ -45,7 +45,10 @@ const Checkout = (props) => {
           </p>
           <p>1. Zmień cenę poprzez nacinięcie przycisku inna kwota</p>
           <p>2. W polu Twój adres podaj kod paczkomatu InPost</p>
-          <p>3. W wiadomości do wpłaty wklej listę produktów </p>
+          <p>
+            3. W polu Dodatkowe informacje wklej liste produktów wraz z
+            rozmiarami{" "}
+          </p>
         </h2>
         <Image
           className={styles.message}
