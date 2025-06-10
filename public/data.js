@@ -104,8 +104,8 @@ const data = {
         "https://zrzutka.pl/53sxwa/award/jzdfyw/t-shirt-anti-jibb-jibb-club",
       ],
       images: [
-        "/images/products/product16/foto1.jpg",
-        "/images/products/product16/foto2.jpg",
+        "/images/products/product17/foto1.jpg",
+        "/images/products/product17/foto2.jpg",
       ],
     },
     {

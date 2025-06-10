@@ -19,7 +19,7 @@ function Home() {
   return (
     <>
       <SEO pageTitle="Dual Trails" pageDescription="Homepage" />
-      {/* <Slider /> */}
+      {<Slider />}
       <ProductsCarousele />
     </>
   );
