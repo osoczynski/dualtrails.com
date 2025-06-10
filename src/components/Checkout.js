@@ -50,12 +50,6 @@ const Checkout = (props) => {
             rozmiarami{" "}
           </p>
         </h2>
-        <Image
-          className={styles.message}
-          src={Logo}
-          alt="message"
-          priority={true}
-        />
         <div className={styles.summary}>
           <FontAwesomeIcon
             icon={faCopy}
