@@ -406,7 +406,7 @@ const data = {
         "- Gumitex 5%",
       ],
       atributesENG: ["Color: White", "Made in Poland"],
-      sizes: ["XS", "S", "M", "L", "XL"],
+      sizes: ["XS", "S", "M", "L"],
       sizeChart: "/images/sizes/sizes-socks.jpg",
       url: "https://zrzutka.pl/53sxwa/pay/6czf7d",
       images: ["/images/products/product5/foto1.jpg"],
