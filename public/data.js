@@ -82,8 +82,8 @@ const data = {
       oldPricePLN: 0,
       priceEURO: 30,
       oldPriceEURO: 0,
-      descriptionPL: "Say N2O to Drugs",
-      descriptionENG: "Say N2O to Drugs",
+      descriptionPL: "Anti Jibb Jibb Club",
+      descriptionENG: "Anti Jibb Jibb Club",
       atributesPL: [
         "Materiał: 100% bawełna",
         "Gramatura: 180g",
@@ -98,7 +98,7 @@ const data = {
         "Regular fit",
         "Made in Poland",
       ],
-      sizes: ["S", "M", "L", "XL", "XXL"],
+      sizes: ["S", "M", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: ["https://zrzutka.pl/53sxwa/pay/jzdfyw"],
       images: [
