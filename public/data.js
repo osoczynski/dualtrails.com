@@ -65,7 +65,7 @@ const data = {
         "Regular fit",
         "Made in Poland",
       ],
-      sizes: ["S", "M", "L", "XL", "XXL"],
+      sizes: ["S", "M", "L", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: ["https://zrzutka.pl/53sxwa/pay/6ypy2x"],
       images: [
@@ -98,7 +98,7 @@ const data = {
         "Regular fit",
         "Made in Poland",
       ],
-      sizes: ["M", "XL", "XXL"],
+      sizes: ["S", "M", "L", "XL", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: ["https://zrzutka.pl/53sxwa/pay/jzdfyw"],
       images: [
@@ -133,7 +133,7 @@ const data = {
         "Made in Poland",
         "Oskar 184cm size XL",
       ],
-      sizes: ["S", "M", "L", "XL"],
+      sizes: ["S", "L", "XL"],
       sizeChart: "/images/sizes/sizes-hoodie.jpg",
       url: ["https://zrzutka.pl/53sxwa/pay/a2jjby"],
       images: [
@@ -495,7 +495,7 @@ const data = {
         "- Bawełna 80%",
         "- Elastan 15%",
         "- Gumitex 5%",
-        "Kolory oraz rozmiary mozna mieszac dowolnie",
+        "Kolory oraz rozmiary można mieszac dowolnie, rozmiar XL dostęony tylko w kolorze czarnym",
       ],
       atributesENG: ["Color: Black", "Made in Poland"],
       sizes: ["XS", "S", "M", "L", "XL"],
