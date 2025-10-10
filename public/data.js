@@ -65,7 +65,7 @@ const data = {
         "Regular fit",
         "Made in Poland",
       ],
-      sizes: ["S", "M", "L", "XXL"],
+      sizes: ["M", "XXL"],
       sizeChart: "/images/sizes/sizes-tshirt.jpg",
       url: ["https://zrzutka.pl/53sxwa/pay/6ypy2x"],
       images: [
@@ -168,7 +168,7 @@ const data = {
         "Regular fit",
         "Made in Poland",
       ],
-      sizes: ["S", "M", "L", "XL"],
+      sizes: ["S", "L", "XL"],
       sizeChart: "/images/sizes/sizes-hoodie.jpg",
       url: ["https://zrzutka.pl/53sxwa/award/5mut8m/bluza-dowolny-t-shirt"],
       images: [
