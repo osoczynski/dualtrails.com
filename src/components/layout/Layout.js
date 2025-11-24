@@ -16,7 +16,7 @@ function Layout(props) {
 
   return (
     <div>
-      <Navigation languageChange={languageChange} locale={locale} />
+      {/*<Navigation languageChange={languageChange} locale={locale} />*/}
       <div className={styles.layout}>{props.children}</div>
       {/* <Footer locale={locale} /> */}
     </div>
